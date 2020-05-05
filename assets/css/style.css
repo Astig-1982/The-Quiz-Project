@@ -1,0 +1,18 @@
+body {
+	margin: 0;
+	padding: 0;
+	font-size: 16px;
+}
+
+.landing {
+	width: 100vw;
+	height: 100vh;
+}
+
+.title {
+	width: 50%;
+	height: 45%;
+	margin: 0 auto;
+	margin-top: 24vh;
+	text-align: center;
+}
