@@ -10,8 +10,8 @@ body {
 }
 
 .title {
-	width: 50%;
-	height: 45%;
+	width: 50vw;
+	height: 45vh;
 	margin: 0 auto;
 	margin-top: 21vh;
 	text-align: center;
