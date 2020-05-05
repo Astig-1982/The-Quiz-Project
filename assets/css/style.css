@@ -13,16 +13,21 @@ body {
 	width: 50%;
 	height: 45%;
 	margin: 0 auto;
-	margin-top: 24vh;
+	margin-top: 21vh;
 	text-align: center;
 }
 
 .social {
     width: 20vw;
-    margin-top: 6rem;
+    margin-top: 4rem;
     font-size: 3rem;
 }
 
 .social li {
 	margin: .5rem;
+}
+
+.contact-details {
+    margin-top: 1.5rem;
+    text-align: center;
 }
