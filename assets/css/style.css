@@ -72,3 +72,22 @@ button {
 #history {
 	margin-left: 3rem;
 }
+
+
+
+#scienceOption {
+	margin-top: 2.8rem;
+	text-align: center;
+}
+
+#scienceOption h1 {
+	font-size: 4rem;
+}
+
+#quote {
+	text-transform: capitalize;
+}
+
+#questions-containter {
+	margin-top: 4vh;
+}
