@@ -18,7 +18,7 @@ button {
     height: 30px;
 }
 
-.title {
+.center-container {
 	width: 50vw;
 	height: 45vh;
 	margin: 0 auto;
@@ -45,4 +45,26 @@ button {
     position: absolute;
     bottom: 0;
     left: 44.7vw;
+}
+
+.sections {
+	height: 820px;
+}
+
+#category {
+	font-size: 5rem;
+}
+
+.category-buttons {
+	margin-top: 5rem;
+	width: 170px;
+	height: 50px;
+}
+
+#science {
+	margin-right: 3rem;
+}
+
+#history {
+	margin-left: 3rem;
 }
