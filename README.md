@@ -11,9 +11,9 @@ Smart Quiz main target is the people with a basic and above general knowledge in
 ### Users Goals
 
 * A game that came be fun and challenging in the same time.
-* A straight forward path to start the game, without navigating throught different menus.
+* A straight forward path to start the quiz, without navigating throught different menus.
 * A quiz that will have just educational categories, rather than lifestyle or main stream categories.
 * A way to contact the product developer in case of any suggestions, complaints or any other relevant topics. 
-* A way to follow the product developer on social media. In this case you can be up to date with new releases of updated. 
+* A way to follow the product developer on social media. In this case you will be on track with new potential releases or updates.
 
 
