@@ -65,14 +65,6 @@ button {
 	height: 50px;
 }
 
-#science {
-	margin-right: 3rem;
-}
-
-#history {
-	margin-left: 3rem;
-}
-
 
 
 #scienceOption {
@@ -91,3 +83,18 @@ button {
 #questions-containter {
 	margin-top: 4vh;
 }
+
+#questions {
+    font-size: 3.8rem;
+}
+
+#lifeBox {
+	width: 200px;
+	height: 200px;
+	border: 1px solid #000;
+	margin: 0 auto;
+	margin-top: 3rem;
+	text-align: center;
+	font-size: 14rem;
+}
+
