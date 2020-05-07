@@ -17,6 +17,8 @@ body {
 button {
     width: 150px;
     height: 30px;
+    background-color: #f47a60;
+    border:.5px solid #f47a60;
 }
 
 .center-container {
@@ -26,6 +28,7 @@ button {
 	margin-top: 21vh;
 	text-align: center;
     background-color: #316879;
+    color: #ced7d8;
 }
 
 .social {
@@ -47,6 +50,10 @@ button {
     position: absolute;
     bottom: 0;
     left: 44.7vw;
+}
+
+#quickView {
+	color: #ced7d8;
 }
 
 /* landing page section ends here */
@@ -98,5 +105,7 @@ button {
 	margin-top: 3rem;
 	text-align: center;
 	font-size: 14rem;
+    color: #f47a60;
+    background-color: #ced7d8;
 }
 
