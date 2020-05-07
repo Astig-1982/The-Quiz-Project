@@ -2,6 +2,7 @@ body {
 	margin: 0;
 	padding: 0;
 	font-size: 16px;
+    background-color: #7fe7dc;
 }
 
 .landing-row {
@@ -24,6 +25,7 @@ button {
 	margin: 0 auto;
 	margin-top: 21vh;
 	text-align: center;
+    background-color: #316879;
 }
 
 .social {
