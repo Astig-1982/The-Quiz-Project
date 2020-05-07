@@ -86,7 +86,7 @@ button {
 
 
 #scienceOption {
-	margin-top: 2.8rem;
+	margin-top: 4rem;
 	text-align: center;
 }
 
@@ -107,13 +107,13 @@ button {
 }
 
 #lifeBox {
-	width: 200px;
-	height: 200px;
+	width: 140px;
+	height: 140px;
 	border: 1px solid #000;
 	margin: 0 auto;
 	margin-top: 3rem;
 	text-align: center;
-	font-size: 14rem;
+	font-size: 9rem;
     color: #f47a60;
     background-color: #ced7d8;
 }
