@@ -1,6 +1,6 @@
 # The Quiz Project 
 
-The Quiz Project is a mini quiz game -- Smart Quiz -- designed for people who are looking for a quick and fun way to test their general knowledge in terms of science and history.
+The Quiz Project is a mini quiz game -- Master Quiz -- designed for people who are looking for a quick and fun way to test their general knowledge in terms of science and history.
 
 ## UX
 
@@ -21,7 +21,7 @@ Smart Quiz main target is the people with a basic and above general knowledge in
 
 **Mr. Feynman**
 
-*As a user I am looking for a quiz game that will challenge me on an intelectual level and will be fun to play in the same time so I can always have handy a fun general knowledge tool.*
+*As a user I am looking for a quiz game that will challenge me on an intelectual level and will be fun to play in the same time so I can always have handy a fun general knowledge tool in my pocket.*
 
 **Mrs. Goodall**
 
