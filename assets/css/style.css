@@ -5,13 +5,16 @@ body {
     background-color: #7fe7dc;
 }
 
-.landing-row {
-    position: relative;
-}
+/* landing page starts here */
 
 .landing {
-	width: 100vw;
+    width: 100vw;
 	max-height: 100vh;
+    position: relative;  
+}
+
+#address {
+    opacity: .6;
 }
 
 button {
@@ -37,6 +40,8 @@ button {
 	font-size: 2rem;
 }
 
+/* social icons styling */
+
 .social {
     width: 20vw;
     margin-top: 4rem;
@@ -52,9 +57,7 @@ button {
     text-align: center;
 }
 
-#address {
-    opacity: .6;
-}
+/* social icons styling ends */
 
 .view {
     position: absolute;
@@ -75,6 +78,10 @@ button {
 }
 
 #category {
+    margin-top: 30vh;
+}
+
+#category h2 {
 	font-size: 5rem;
 }
 
@@ -84,7 +91,9 @@ button {
 	height: 50px;
 }
 
+/* category section ends here */
 
+/* questions/science section starts here */
 
 #scienceOption {
 	margin-top: 4rem;
@@ -117,7 +126,6 @@ button {
 	text-align: center;
 	font-size: 9rem;
     color: #f47a60;
-    background-color: #ced7d8;
-    
+    background-color: #ced7d8; 
 }
 
