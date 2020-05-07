@@ -31,6 +31,11 @@ button {
     color: #ced7d8;
 }
 
+#startQuiz {
+	height: 60px;
+	font-size: 2rem;
+}
+
 .social {
     width: 20vw;
     margin-top: 4rem;
