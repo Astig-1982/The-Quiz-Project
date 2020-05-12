@@ -8,5 +8,20 @@ $(document).ready(function(){
 			$('.title').html('<p class="display-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure.</p><p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure.</p>');
 			$('#quickView').html('BACK');
 		};
-	});
+    });
+    
+    $('#science').click(function() {
+        fetch('https://opentdb.com/api.php?amount=10&category=17&difficulty=medium&type=boolean')
+        .then((res) => res.json())
+        .then((data) => {
+            let eachQuestion = `<h2>This is are the questions</h2>`
+            data.results.forEach(function(question) {
+                eachQuestion += `
+                <ul>
+                <li>${question.question}</li>
+                </ul>`
+            });
+            $('#allQuestions').html(eachQuestion);
+        });
+    });
 });
