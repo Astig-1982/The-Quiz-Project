@@ -10,18 +10,30 @@ $(document).ready(function(){
 		};
     });
     
-    $('#science').click(function() {
-        fetch('https://opentdb.com/api.php?amount=10&category=17&difficulty=medium&type=boolean')
-        .then((res) => res.json())
-        .then((data) => {
-            let eachQuestion = `<h2>This is are the questions</h2>`
-            data.results.forEach(function(question) {
-                eachQuestion += `
-                <ul>
-                <li>${question.question}</li>
-                </ul>`
-            });
-            $('#allQuestions').html(eachQuestion);
+
+    $("#science").click(function () {
+    fetch(
+      "https://opentdb.com/api.php?amount=10&category=17&difficulty=medium&type=boolean"
+    )
+      .then((res) => res.json())
+      .then((data) => {
+        let questions = [] 
+        questions = data.results.map(function (question) {
+          return question
         });
-    });
+        console.log(questions);
+        var count = 0;
+        $('#nextQuestion').click(function() {
+        	var arrayLength = questions.length;
+        	if (count == arrayLength) {
+        		count == 0;
+        	}
+        	document.getElementById('questions').innerHTML = questions[count].question;
+        	count++;
+        });
+        
+
+      });
+  });
+
 });
