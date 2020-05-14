@@ -22,13 +22,13 @@ $(document).ready(function(){
           return question
         });
         console.log(questions);
-        var count = 0;
+        let count = 0;
         $('#nextQuestion').click(function() {
-        	var arrayLength = questions.length;
+        	let arrayLength = questions.length;
         	if (count == arrayLength) {
         		count == 0;
         	}
-        	document.getElementById('questions').innerHTML = questions[count].question;
+        	$('#questions').html(questions[count].question);
         	count++;
         });
         
