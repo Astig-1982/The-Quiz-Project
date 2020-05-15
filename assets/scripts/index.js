@@ -16,51 +16,61 @@ $(document).ready(function () {
 
   /* the below onclick event renders the science questions */
 
-  $("#science").click(function () {
-    fetch(
-      "https://opentdb.com/api.php?amount=10&category=17&difficulty=medium&type=boolean"
-    )
-      .then((res) => res.json())
-      .then((data) => {
-        let questions = [];
-        questions = data.results.map(function (question) {
-          return question;
-        });
-        console.log(questions);
-        let count = 0;
-        $("#nextQuestion").click(function () {
-          let arrayLength = questions.length;
-          if (count == arrayLength) {
-            count == 0;
-          }
-          $("#questions").html(questions[count].question);
-          count++;
-        });
+  $('#science').click(function() {
+    fetch('https://opentdb.com/api.php?amount=10&category=17&difficulty=medium&type=boolean')
+    .then((res) => res.json())
+    .then((data) => {
+      let questions = [];
+      questions = data.results.map(function(question) {
+        return question;
       });
-  });
+      console.log(questions);
+      let count = 0;
+      $("#questions").html(questions[count].question);
+      $('.answer-buttons').click(function () {
+        console.log(count)
+        if (event.target.value == questions[count].correct_answer) {
+          $('#rightAnswer').html('that is the correct answer');
+        } else {
+          $('#rightAnswer').html('that is not the correct answer');
+        }
+        let arrayLength = questions.length;
+        if (count == arrayLength) {
+          count = 0;
+        }
+        count++;
+        $("#questions").html(questions[count].question);
+      });
+    });
+});
 
    /* the below onclick event renders the history questions */
 
-  $('#history').click(function () {
-    fetch(
-      "https://opentdb.com/api.php?amount=10&category=23&difficulty=medium&type=boolean"
-    )
-      .then((res) => res.json())
-      .then((data) => {
-        let questions = [];
-        questions = data.results.map(function (question) {
-          return question;
-        });
-        console.log(questions);
-        let count = 0;
-        $("#nextQuestion").click(function () {
-          let arrayLength = questions.length;
-          if (count == arrayLength) {
-            count == 0;
-          }
-          $("#questions").html(questions[count].question);
-          count++;
-        });
+  $('#history').click(function() {
+    fetch('https://opentdb.com/api.php?amount=10&category=23&difficulty=medium&type=boolean')
+    .then((res) => res.json())
+    .then((data) => {
+      let questions = [];
+      questions = data.results.map(function(question) {
+        return question;
       });
-  });
+      console.log(questions);
+      let count = 0;
+      $("#questions").html(questions[count].question);
+      $('.answer-buttons').click(function () {
+        console.log(count)
+        if (event.target.value == questions[count].correct_answer) {
+          $('#rightAnswer').html('that is the correct answer');
+        } else {
+          $('#rightAnswer').html('that is not the correct answer');
+        }
+        let arrayLength = questions.length;
+        if (count == arrayLength) {
+          count = 0;
+        }
+        count++;
+        $("#questions").html(questions[count].question);
+      });
+    });
+  })
 });
