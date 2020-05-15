@@ -28,11 +28,13 @@ $(document).ready(function () {
       let count = 0;
       $("#questions").html(questions[count].question);
       $('.answer-buttons').click(function () {
-        console.log(count)
         if (event.target.value == questions[count].correct_answer) {
           $('#rightAnswer').html('that is the correct answer');
         } else {
           $('#rightAnswer').html('that is not the correct answer');
+          let life = $('#lifeBox');
+          let currentLife = life.html();
+          life.html(--currentLife);
         }
         let arrayLength = questions.length;
         if (count == arrayLength) {
@@ -58,11 +60,13 @@ $(document).ready(function () {
       let count = 0;
       $("#questions").html(questions[count].question);
       $('.answer-buttons').click(function () {
-        console.log(count)
         if (event.target.value == questions[count].correct_answer) {
           $('#rightAnswer').html('that is the correct answer');
         } else {
           $('#rightAnswer').html('that is not the correct answer');
+          let life = $('#lifeBox');
+          let currentLife = life.html();
+          life.html(--currentLife);
         }
         let arrayLength = questions.length;
         if (count == arrayLength) {
