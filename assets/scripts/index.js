@@ -81,7 +81,6 @@ $(document).ready(function () {
         });
       });
   });
-
   function startGame() {
     let main = $("#mainMenu");
     let category = $("#categoryMenu");
@@ -90,10 +89,10 @@ $(document).ready(function () {
       category.show();
       main.hide();
     });
-    $('.category-buttons').click(function() {
-        game.show();
-        category.hide();
-    })
+    $(".category-buttons").click(function () {
+      game.show();
+      category.hide();
+    });
   }
   startGame();
 });
