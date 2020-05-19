@@ -73,8 +73,9 @@ button {
 
 /* category options section starts here */
 
-.sections {
+.hiddenAreas {
 	height: 820px;
+    display: none;
 }
 
 #category {
@@ -85,7 +86,7 @@ button {
 	font-size: 5rem;
 }
 
-.category-buttons {
+.main-buttons {
 	margin-top: 5rem;
 	width: 170px;
 	height: 50px;
