@@ -17,6 +17,9 @@ $(document).ready(function () {
   /* the below onclick event renders the science questions */
 
   $("#science").click(function () {
+    let main = $("#mainMenu");
+    let game = $("#gamePage");
+    let gameFinished = $("#gameOver");
     fetch(
       "https://opentdb.com/api.php?amount=10&category=17&difficulty=medium&type=boolean"
     )
@@ -37,6 +40,10 @@ $(document).ready(function () {
             let life = $("#lifeBox");
             let currentLife = life.html();
             life.html(--currentLife);
+            if (currentLife == 0) {
+              gameFinished.show();
+              game.hide();
+            }
           }
           let arrayLength = questions.length;
           if (count == arrayLength) {
@@ -46,11 +53,20 @@ $(document).ready(function () {
           $("#questions").html(questions[count].question);
         });
       });
+      $('#main-menu-button').click(function() {
+        main.show();
+        gameFinished.hide();
+      });
   });
+
+  
 
   /* the below onclick event renders the history questions */
 
   $("#history").click(function () {
+    let main = $("#mainMenu");
+    let game = $("#gamePage");
+    let gameFinished = $("#gameOver");
     fetch(
       "https://opentdb.com/api.php?amount=10&category=23&difficulty=medium&type=boolean"
     )
@@ -71,7 +87,11 @@ $(document).ready(function () {
             let life = $("#lifeBox");
             let currentLife = life.html();
             life.html(--currentLife);
-          }
+            if (currentLife == 0) {
+              gameFinished.show();
+              game.hide(); 
+            };
+          };
           let arrayLength = questions.length;
           if (count == arrayLength) {
             count = 0;
@@ -79,6 +99,10 @@ $(document).ready(function () {
           count++;
           $("#questions").html(questions[count].question);
         });
+      });
+      $('#main-menu-button').click(function() {
+        main.show();
+        gameFinished.hide();
       });
   });
   function startGame() {
