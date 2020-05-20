@@ -28,7 +28,7 @@ $(document).ready(function () {
         });
         console.log(questions);
         let count = 0;
-        $("#questions").html(questions[count].question);
+        $('#questions-container').prepend(`<h2 id="questions">${questions[count].question}<h2>`);
         $(".answer-buttons").click(function () {
           if (event.target.value == questions[count].correct_answer) {
             $("#rightAnswer").html("that is the correct answer");
@@ -62,7 +62,7 @@ $(document).ready(function () {
         });
         console.log(questions);
         let count = 0;
-        $("#questions").html(questions[count].question);
+        $('#questions-container').prepend(`<h2 id="questions">${questions[count].question}<h2>`);
         $(".answer-buttons").click(function () {
           if (event.target.value == questions[count].correct_answer) {
             $("#rightAnswer").html("that is the correct answer");
