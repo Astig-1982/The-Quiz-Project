@@ -79,7 +79,7 @@ button {
 }
 
 #category {
-    margin-top: 30vh;
+    margin-top: 26.3vh;
 }
 
 #category h2 {
@@ -105,7 +105,7 @@ button {
 }
 
 #questions-container {
-	margin-top: 8vh;
+	margin-top: 6.5vh;
 }
 
 #scienceOption h1 {
@@ -114,10 +114,6 @@ button {
 
 #quote {
 	text-transform: capitalize;
-}
-
-#questions-containter {
-	margin-top: 4vh;
 }
 
 #questions {
