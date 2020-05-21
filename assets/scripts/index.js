@@ -31,7 +31,8 @@ $(document).ready(function () {
         });
         console.log(questions);
         let count = 0;
-        $('#questions-container').prepend(`<h2 id="questions">${questions[count].question}<h2>`);
+        let numberCount = 1;
+        $('#questions-container').prepend(`<p id="questions">${numberCount}. ${questions[count].question}</p>`);
         $(".answer-buttons").click(function () {
           if (event.target.value == questions[count].correct_answer) {
             $("#rightAnswer").html("that is the correct answer");
@@ -50,7 +51,8 @@ $(document).ready(function () {
             count = 0;
           }
           count++;
-          $("#questions").html(questions[count].question);
+          numberCount++;
+          $("#questions").html(`${numberCount}. ${questions[count].question}`);
         });
       });
       $('#main-menu-button').click(function() {
@@ -78,7 +80,8 @@ $(document).ready(function () {
         });
         console.log(questions);
         let count = 0;
-        $('#questions-container').prepend(`<h2 id="questions">${questions[count].question}<h2>`);
+        let numberCount = 1;
+        $('#questions-container').prepend(`<p id="questions">${numberCount}. ${questions[count].question}</p>`);
         $(".answer-buttons").click(function () {
           if (event.target.value == questions[count].correct_answer) {
             $("#rightAnswer").html("that is the correct answer");
@@ -89,15 +92,16 @@ $(document).ready(function () {
             life.html(--currentLife);
             if (currentLife == 0) {
               gameFinished.show();
-              game.hide(); 
-            };
-          };
+              game.hide();
+            }
+          }
           let arrayLength = questions.length;
           if (count == arrayLength) {
             count = 0;
           }
           count++;
-          $("#questions").html(questions[count].question);
+          numberCount++;
+          $("#questions").html(`${numberCount}. ${questions[count].question}`);
         });
       });
       $('#main-menu-button').click(function() {
@@ -105,6 +109,7 @@ $(document).ready(function () {
         gameFinished.hide();
       });
   });
+
   function startGame() {
     let main = $("#mainMenu");
     let category = $("#categoryMenu");
