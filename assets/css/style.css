@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Balsamiq+Sans:100,200,300,400,500,600,700&display=swap');
 
 body {
 	margin: 0;
@@ -23,10 +23,6 @@ body {
     opacity: .6;
 }
 
-button {
-    
-}
-
 .center-container {
 	width: 50vw;
 	height: 45vh;
@@ -35,6 +31,11 @@ button {
 	text-align: center;
     background-color: #316879;
     color: #ced7d8;
+}
+
+#main-title {
+    font-family: 'Balsamiq Sans', cursive, sans-serif;
+    font-weight: 500;
 }
 
 #startQuiz {
