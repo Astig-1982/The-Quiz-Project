@@ -68,6 +68,7 @@ $(document).ready(function () {
   $("#history").click(function () {
     let main = $("#mainMenu");
     let game = $("#gamePage");
+    let category = $("#categoryMenu");
     let gameFinished = $("#gameOver");
     fetch(
       "https://opentdb.com/api.php?amount=10&category=23&difficulty=medium&type=boolean"
@@ -104,9 +105,16 @@ $(document).ready(function () {
           $("#questions").html(`${numberCount}. ${questions[count].question}`);
         });
       });
-      $('#main-menu-button').click(function() {
+     $('.main-buttons').click(function() {
+        if (event.target.id == 'main-menu-button') {
         main.show();
         gameFinished.hide();
+        $('#questions').remove();
+      } else if (event.target.id == 'try-again-button') {
+        category.show();
+        gameFinished.hide();
+        $('#questions').remove();
+      }
       });
   });
 
