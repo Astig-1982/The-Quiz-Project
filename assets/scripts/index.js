@@ -33,7 +33,9 @@ $(document).ready(function () {
         console.log(questions);
         let count = 0;
         let numberCount = 1;
-        $('#questions-container').prepend(`<p id="questions">${numberCount}. ${questions[count].question}</p>`);
+        $("#questions-container").prepend(
+          `<p id="questions">${numberCount}. ${questions[count].question}</p>`
+        );
         $(".answer-buttons").click(function () {
           if (event.target.value == questions[count].correct_answer) {
             $("#rightAnswer").html("that is the correct answer");
@@ -56,20 +58,18 @@ $(document).ready(function () {
           $("#questions").html(`${numberCount}. ${questions[count].question}`);
         });
       });
-      $('.main-buttons').click(function() {
-        if (event.target.id == 'main-menu-button') {
+    $(".main-buttons").click(function () {
+      if (event.target.id == "main-menu-button") {
         main.show();
         gameFinished.hide();
-        $('#questions').remove();
-      } else if (event.target.id == 'try-again-button') {
+        $("#questions").remove();
+      } else if (event.target.id == "try-again-button") {
         category.show();
         gameFinished.hide();
-        $('#questions').remove();
+        $("#questions").remove();
       }
-      });
+    });
   });
-
-  
 
   /* the below onclick event renders the history questions */
 
@@ -78,6 +78,8 @@ $(document).ready(function () {
     let game = $("#gamePage");
     let category = $("#categoryMenu");
     let gameFinished = $("#gameOver");
+    let life = $("#lifeBox");
+    let currentLife = life.html();
     fetch(
       "https://opentdb.com/api.php?amount=10&category=23&difficulty=medium&type=boolean"
     )
@@ -90,14 +92,14 @@ $(document).ready(function () {
         console.log(questions);
         let count = 0;
         let numberCount = 1;
-        $('#questions-container').prepend(`<p id="questions">${numberCount}. ${questions[count].question}</p>`);
+        $("#questions-container").prepend(
+          `<p id="questions">${numberCount}. ${questions[count].question}</p>`
+        );
         $(".answer-buttons").click(function () {
           if (event.target.value == questions[count].correct_answer) {
             $("#rightAnswer").html("that is the correct answer");
           } else {
             $("#rightAnswer").html("that is not the correct answer");
-            let life = $("#lifeBox");
-            let currentLife = life.html();
             life.html(--currentLife);
             if (currentLife == 0) {
               gameFinished.show();
@@ -111,19 +113,25 @@ $(document).ready(function () {
           count++;
           numberCount++;
           $("#questions").html(`${numberCount}. ${questions[count].question}`);
+          if (numberCount == 10 && currentLife == 3) {
+            complete.show();
+            $("#congratulationMessage").html("You have won the golden cup");
+            $(".trophy").addClass("gold");
+            game.hide();
+          }
         });
       });
-     $('.main-buttons').click(function() {
-        if (event.target.id == 'main-menu-button') {
+    $(".main-buttons").click(function () {
+      if (event.target.id == "main-menu-button") {
         main.show();
         gameFinished.hide();
-        $('#questions').remove();
-      } else if (event.target.id == 'try-again-button') {
+        $("#questions").remove();
+      } else if (event.target.id == "try-again-button") {
         category.show();
         gameFinished.hide();
-        $('#questions').remove();
+        $("#questions").remove();
       }
-      });
+    });
   });
 
   function startGame() {
