@@ -5,6 +5,8 @@ body {
 	padding: 0;
 	font-size: 16px;
     background-color: #7fe7dc;
+    font-family: 'Lato', sans-serif;
+    letter-spacing: .1rem;
 }
 
 h2 {
@@ -133,6 +135,7 @@ h2 {
 
 #questions {
     font-size: 2.5rem;
+    font-weight: 400;
 }
 
 #lifeBox {
