@@ -133,8 +133,22 @@ button {
     background-color: #ced7d8; 
 }
 
-
+/* congratulation section starts here */
 
 #congratulations-text {
 	margin: 0;
+};
+
+.trophy {
+	margin: 3rem 0 0 0;
+	font-size: 8rem;
+	opacity: 0;
+	transition-property: opacity;
+	transition-duration: 2s;
+	transition-timing-function: ease;
+}
+
+.gold {
+	opacity: 1;
+	color: rgba(255,215,0,.8);	
 }
