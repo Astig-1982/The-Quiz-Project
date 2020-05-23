@@ -116,8 +116,18 @@ $(document).ready(function () {
           $("#questions").html(`${numberCount}. ${questions[count].question}`);
           if (numberCount == 10 && currentLife == 3) {
             complete.show();
-            $("#congratulationMessage").html("You have won the golden cup");
+            $("#congratulationMessage").html("You have won the golden cup!");
             $(".trophy").addClass('gold');
+            game.hide();
+          } else if (numberCount == 10 && currentLife == 2) {
+            complete.show();
+            $("#congratulationMessage").html("You have won the silver cup!");
+            $(".trophy").addClass('silver');
+            game.hide();
+          } else if (numberCount == 10 && currentLife == 1) {
+            complete.show();
+            $("#congratulationMessage").html("You have won the bronze cup!");
+            $(".trophy").addClass('bronze');
             game.hide();
           };
         });
