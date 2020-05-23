@@ -137,7 +137,7 @@ button {
 
 #congratulations-text {
 	margin: 0;
-};
+}
 
 .trophy {
 	margin: 3rem 0 0 0;
@@ -148,7 +148,18 @@ button {
 	transition-timing-function: ease;
 }
 
+@keyframes photo-zoom {
+	from {
+		transform: scale(1);
+	}
+	to {
+		transform: scale(1.8);
+	}
+}
+
 .gold {
-	opacity: 1;
-	color: rgba(255,215,0,.8);	
+	animation-name: photo-zoom;
+	animation-duration: 2s;
+	animation-fill-mode: forwards;
+	color: rgba(255,215,0,.8);
 }
