@@ -78,6 +78,7 @@ $(document).ready(function () {
     let game = $("#gamePage");
     let category = $("#categoryMenu");
     let gameFinished = $("#gameOver");
+    let complete = $("#gameCompleted");
     let life = $("#lifeBox");
     let currentLife = life.html();
     fetch(
@@ -116,9 +117,9 @@ $(document).ready(function () {
           if (numberCount == 10 && currentLife == 3) {
             complete.show();
             $("#congratulationMessage").html("You have won the golden cup");
-            $(".trophy").addClass("gold");
+            $(".trophy").addClass('gold');
             game.hide();
-          }
+          };
         });
       });
     $(".main-buttons").click(function () {
