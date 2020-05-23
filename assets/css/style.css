@@ -24,11 +24,7 @@ body {
 }
 
 button {
-    width: 150px;
-    height: 30px;
-    background-color: #f47a60;
-    border:.5px solid #f47a60;
-    border-radius: .5rem;
+    
 }
 
 .center-container {
@@ -44,6 +40,7 @@ button {
 #startQuiz {
 	height: 60px;
 	font-size: 2rem;
+    margin-top: 2rem;
 }
 
 /* social icons styling */
@@ -73,6 +70,8 @@ button {
 
 #quickView {
 	color: #ced7d8;
+    width: 150px;
+    height: 30px;
 }
 
 /* landing page section ends here */
@@ -97,6 +96,9 @@ button {
 	width: 170px;
 	height: 50px;
     text-transform: uppercase;
+    background-color: #f47a60;
+    border:.5px solid #f47a60;
+    border-radius: .5rem;
 }
 
 /* category section ends here */
