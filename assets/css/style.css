@@ -161,3 +161,17 @@ button {
 	animation-fill-mode: forwards;
 	color: rgba(255,215,0,.8);
 }
+
+.silver {
+	animation-name: photo-zoom;
+	animation-duration: 2s;
+	animation-fill-mode: forwards;
+	color: rgb(240, 240, 240);
+}
+
+.bronze {
+	animation-name: photo-zoom;
+	animation-duration: 2s;
+	animation-fill-mode: forwards;
+	color: rgb(205, 127, 50);
+}
