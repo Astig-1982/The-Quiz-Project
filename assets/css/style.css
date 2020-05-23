@@ -47,7 +47,7 @@ h2 {
 
 #startQuiz {
 	height: 60px;
-	font-size: 2rem;
+	font-size: 2.2rem;
     margin-top: 2rem;
 }
 
@@ -107,6 +107,7 @@ h2 {
     background-color: #f47a60;
     border:.5px solid #f47a60;
     border-radius: .5rem;
+    font-size: 2rem;
     font-family: 'Montserrat', sans-serif;
     font-weight: 600;
 }
