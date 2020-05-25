@@ -14,7 +14,7 @@ $(document).ready(function () {
     }
   });
 
-   // the below click event is for 'fetching the questions for both of the categories 
+   // the below click event is for 'fetching' the questions for both of the categories 
 
   $(".category-buttons").click(function () {
     let main = $("#mainMenu");
@@ -48,12 +48,12 @@ $(document).ready(function () {
             if (currentLife == 0) {
               gameFinished.show();
               game.hide();
-            }
-          }
+            };
+          };
           let arrayLength = questions.length;
           if (count == arrayLength) {
             count = 0;
-          }
+          };
           count++;
           numberCount++;
           $("#questions").html(`${numberCount}. ${questions[count].question}`);
@@ -102,6 +102,6 @@ $(document).ready(function () {
       game.show();
       category.hide();
     });
-  }
+  };
   startGame();
 });
