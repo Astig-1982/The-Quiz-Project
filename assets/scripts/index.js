@@ -14,64 +14,7 @@ $(document).ready(function () {
     }
   });
 
-  /* the below onclick event renders the science questions */
-
-  $("#science").click(function () {
-    let main = $("#mainMenu");
-    let game = $("#gamePage");
-    let category = $("#categoryMenu");
-    let gameFinished = $("#gameOver");
-    fetch(
-      "https://opentdb.com/api.php?amount=10&category=17&difficulty=medium&type=boolean"
-    )
-      .then((res) => res.json())
-      .then((data) => {
-        let questions = [];
-        questions = data.results.map(function (question) {
-          return question;
-        });
-        console.log(questions);
-        let count = 0;
-        let numberCount = 1;
-        $("#questions-container").prepend(
-          `<p id="questions">${numberCount}. ${questions[count].question}</p>`
-        );
-        $(".answer-buttons").click(function () {
-          if (event.target.value == questions[count].correct_answer) {
-            $("#rightAnswer").html("that is the correct answer");
-          } else {
-            $("#rightAnswer").html("that is not the correct answer");
-            let life = $("#lifeBox");
-            let currentLife = life.html();
-            life.html(--currentLife);
-            if (currentLife == 0) {
-              gameFinished.show();
-              game.hide();
-            }
-          }
-          let arrayLength = questions.length;
-          if (count == arrayLength) {
-            count = 0;
-          }
-          count++;
-          numberCount++;
-          $("#questions").html(`${numberCount}. ${questions[count].question}`);
-        });
-      });
-    $(".main-buttons").click(function () {
-      if (event.target.id == "main-menu-button") {
-        main.show();
-        gameFinished.hide();
-        $("#questions").remove();
-      } else if (event.target.id == "try-again-button") {
-        category.show();
-        gameFinished.hide();
-        $("#questions").remove();
-      }
-    });
-  });
-
-  /* the below onclick event renders the history questions */
+   // the below click event is for 'fetching the questions for both of the categories 
 
   $(".category-buttons").click(function () {
     let main = $("#mainMenu");
@@ -144,6 +87,8 @@ $(document).ready(function () {
       }
     });
   });
+
+// function startGame() starts here 
 
   function startGame() {
     let main = $("#mainMenu");
