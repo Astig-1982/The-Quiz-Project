@@ -73,7 +73,7 @@ $(document).ready(function () {
 
   /* the below onclick event renders the history questions */
 
-  $("#history").click(function () {
+  $(".category-buttons").click(function () {
     let main = $("#mainMenu");
     let game = $("#gamePage");
     let category = $("#categoryMenu");
@@ -82,7 +82,7 @@ $(document).ready(function () {
     let life = $("#lifeBox");
     let currentLife = life.html();
     fetch(
-      "https://opentdb.com/api.php?amount=10&category=23&difficulty=medium&type=boolean"
+      `https://opentdb.com/api.php?amount=10&category=${this.id}&difficulty=medium&type=boolean`
     )
       .then((res) => res.json())
       .then((data) => {
