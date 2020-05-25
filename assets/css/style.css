@@ -112,6 +112,10 @@ h2 {
     font-weight: 600;
 }
 
+.category-buttons {
+    margin-top: 3rem;
+}
+
 /* category section ends here */
 
 /* questions section starts here */
