@@ -30,7 +30,7 @@ $(document).ready(function () {
 
     $(".category-buttons").click(function() {
       fetch(
-      `https://opentdb.com/api.php?amount=10&category=${this.id}&difficulty=medium&type=boolean`
+      `https://opentdb.com/api.php?amount=10&category=${this.id}&type=boolean`
     )
       .then((res) => res.json())
       .then((data) => {
