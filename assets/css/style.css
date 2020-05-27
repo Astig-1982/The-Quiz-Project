@@ -229,54 +229,46 @@ h2 {
 	color: rgb(205, 127, 50);
 }
 
+/* media queries start here */
+
 @media (max-width: 576px) {
    .main-buttons {
     margin-top: 3rem;
     }
-
    .center-container {
     width: 90vw;
     height: 49vh;
     margin-top: 3.4vh;
    }
-
    #questions-container {
 	margin-top: 3.4vh;
 }
-
    #questions {
        font-size: 2rem;
        height: 43%;
    }
-
    .main-buttons {
        margin-top: 1rem;
    }
-
    #lifeBox {
        width: 25vw;
        height: 15vh;
        margin-top: 3.6rem;
        font-size: 7rem;
    }
-
    .hiddenAreas {
        height: 100%;
    }
-
    h2 {
        font-size: 3rem;
    }
-
    .category-buttons {
        width: 25vw;
        font-size: 1.2rem;
    }
-
    #categorySelection {
        margin-top: 3rem;
    }
-
    #category h2 {
 	font-size: 3.1rem;
    }
