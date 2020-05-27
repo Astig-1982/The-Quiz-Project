@@ -228,3 +228,31 @@ h2 {
 	animation-fill-mode: forwards;
 	color: rgb(205, 127, 50);
 }
+
+@media (max-width: 576px) {
+   .main-buttons {
+    margin-top: 3rem;
+    }
+
+   #questions-container {
+    width: 90vw;
+    height: 49vh;
+    margin-top: 3.4vh;
+   }
+
+   #questions {
+       font-size: 2rem;
+       height: 43%;
+   }
+
+   .main-buttons {
+       margin-top: 1rem;
+   }
+
+   #lifeBox {
+       width: 25vw;
+       height: 15vh;
+       margin-top: 2.3rem;
+       font-size: 6rem;
+   }
+}
