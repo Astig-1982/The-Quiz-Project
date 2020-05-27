@@ -54,7 +54,7 @@ h2 {
 /* social icons styling */
 
 .social {
-    width: 20vw;
+    width: 0;
     margin-top: 4rem;
     font-size: 3rem;
 }
@@ -65,6 +65,10 @@ h2 {
 
 .social li a {
     padding: 0;
+}
+
+.social li i {
+    color: rgb(48, 48, 48);
 }
 
 .contact-details {
