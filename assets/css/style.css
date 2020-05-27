@@ -45,6 +45,27 @@ h2 {
     font-weight: 500;
 }
 
+.main-buttons {
+	margin-top: 5rem;
+	width: 170px;
+	height: 50px;
+    text-transform: uppercase;
+    background-color: #f47a60;
+    border: none;
+    border-radius: .5rem;
+    font-size: 2rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    transition-property: background-color, color;
+    transition-duration: .2s;
+    transition-timing-function: ease;
+}
+
+.main-buttons:hover {
+    background-color: #ced7d8;
+    color: #f47a60;
+}
+
 #startQuiz {
 	height: 60px;
 	font-size: 2.2rem;
@@ -115,34 +136,13 @@ h2 {
 	font-size: 5rem;
 }
 
-.main-buttons {
-	margin-top: 5rem;
-	width: 170px;
-	height: 50px;
-    text-transform: uppercase;
-    background-color: #f47a60;
-    border: none;
-    border-radius: .5rem;
-    font-size: 2rem;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 600;
-    transition-property: background-color, color;
-    transition-duration: .2s;
-    transition-timing-function: ease;
-}
-
-.main-buttons:hover {
-    background-color: #ced7d8;
-    color: #f47a60;
-}
-
 .category-buttons {
     margin-top: 3rem;
 }
 
 /* category section ends here */
 
-/* questions section starts here */
+/* game section starts here */
 
 .quote-section {
 	text-align: center;
@@ -169,6 +169,8 @@ h2 {
 }
 
 #questions {
+    width: 100%;
+    height: 43%;
     font-size: 2.5rem;
     font-weight: 400;
 }
