@@ -88,9 +88,13 @@ h2 {
     color: #ced7d8;
     width: 150px;
     height: 30px;
+    transition-property: background-color, color;
+    transition-duration: .2s;
+    transition-timing-function: ease;
 }
 
 #quickView:hover {
+    background-color: #7fe7dc;
     color: #f47a60;
 }
 
