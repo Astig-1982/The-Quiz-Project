@@ -279,5 +279,8 @@ h2 {
 
    #category h2 {
 	font-size: 3.1rem;
-}
+   }
+   #gameOver-buttons {
+       margin-top: 5rem;
+   }
 }
