@@ -63,6 +63,10 @@ h2 {
 	margin: .5rem;
 }
 
+.social li a {
+    padding: 0;
+}
+
 .contact-details {
     margin-top: 1.1rem;
     text-align: center;
