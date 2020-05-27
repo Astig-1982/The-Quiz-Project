@@ -1,3 +1,15 @@
+const mainRef = $("#mainMenu");
+const gameRef = $("#gamePage");
+const categoryRef = $("#categoryMenu");
+const gameFinishedRef = $("#gameOver");
+const completeRef = $("#gameCompleted");
+const lifeRef = $("#lifeBox");
+let currentLife = lifeRef.html();
+let allQuestions =[];
+let count = 0;
+let numberCount = 1;
+let winnerTrophy;
+
 $(document).ready(function () {
   $("#quickView").click(function () {
     let el = $(this).html();
@@ -14,94 +26,110 @@ $(document).ready(function () {
     }
   });
 
-   // the below click event is for 'fetching' the questions for both of the categories 
+  function startTheQuiz() {
 
-  $(".category-buttons").click(function () {
-    let main = $("#mainMenu");
-    let game = $("#gamePage");
-    let category = $("#categoryMenu");
-    let gameFinished = $("#gameOver");
-    let complete = $("#gameCompleted");
-    let life = $("#lifeBox");
-    let currentLife = life.html();
-    fetch(
+    $(".category-buttons").click(function() {
+      fetch(
       `https://opentdb.com/api.php?amount=10&category=${this.id}&difficulty=medium&type=boolean`
     )
       .then((res) => res.json())
       .then((data) => {
-        let questions = [];
-        questions = data.results.map(function (question) {
+        allQuestions = data.results.map(function (question) {
           return question;
         });
-        console.log(questions);
-        let count = 0;
-        let numberCount = 1;
+        console.log(allQuestions)
         $("#questions-container").prepend(
-          `<p id="questions">${numberCount}. ${questions[count].question}</p>`
+          `<p id="questions">${numberCount}. ${allQuestions[count].question}</p>`
         );
-        $(".answer-buttons").click(function () {
-          if (event.target.value == questions[count].correct_answer) {
-            $("#rightAnswer").html("that is the correct answer");
-          } else {
-            $("#rightAnswer").html("that is not the correct answer");
-            life.html(--currentLife);
-            if (currentLife == 0) {
-              gameFinished.show();
-              game.hide();
-            };
-          };
-          let arrayLength = questions.length;
+      });
+    });
+  };
+
+   function trueOrFalse() {
+   	
+       $(".answer-buttons").click(function() {
+        if (event.target.value == allQuestions[count].correct_answer) {
+          $("#rightAnswer").html("that is the correct answer");
+        } else {
+          $("#rightAnswer").html("that is not the correct answer");
+            lifeRef.html(--currentLife);
+            
+        };
+        let arrayLength = allQuestions.length;
           if (count == arrayLength) {
             count = 0;
           };
           count++;
           numberCount++;
-          $("#questions").html(`${numberCount}. ${questions[count].question}`);
-          if (numberCount == 10 && currentLife == 3) {
-            complete.show();
-            $("#congratulationMessage").html("You have won the golden cup!");
-            $(".trophy").addClass('gold');
-            game.hide();
-          } else if (numberCount == 10 && currentLife == 2) {
-            complete.show();
-            $("#congratulationMessage").html("You have won the silver cup!");
-            $(".trophy").addClass('silver');
-            game.hide();
-          } else if (numberCount == 10 && currentLife == 1) {
-            complete.show();
-            $("#congratulationMessage").html("You have won the bronze cup!");
-            $(".trophy").addClass('bronze');
-            game.hide();
-          };
-        });
-      });
-    $(".main-buttons").click(function () {
-      if (event.target.id == "main-menu-button") {
-        main.show();
-        gameFinished.hide();
+          $("#questions").html(`${numberCount}. ${allQuestions[count].question}`);
+          endOfGame();
+          winGame();
+       });
+       
+   };
+
+   function endOfGame() {
+    if (currentLife == 0) {
+              gameFinishedRef.show();
+              gameRef.hide();
+              
+            };
+        };
+function menuGameOver() {
+      $(".main-buttons").click(function () {
+      if (event.target.value == "main-menu") {
+
+        mainRef.show();
+        gameFinishedRef.hide();
         $("#questions").remove();
-      } else if (event.target.id == "try-again-button") {
-        category.show();
-        gameFinished.hide();
+        count = 0;
+        numberCount = 1;
+        
+      } else if (event.target.value == "again") {
+        categoryRef.show();
+        gameFinishedRef.hide();
         $("#questions").remove();
+        count = 0;
+        numberCount = 1;
       }
     });
-  });
+};
 
-// function startGame() starts here 
-
-  function startGame() {
-    let main = $("#mainMenu");
-    let category = $("#categoryMenu");
-    let game = $("#gamePage");
+    function startGame() {
     $("#startQuiz").click(function () {
-      category.show();
-      main.hide();
+      categoryRef.show();
+      mainRef.hide();
     });
     $(".category-buttons").click(function () {
-      game.show();
-      category.hide();
+      gameRef.show();
+      categoryRef.hide();
     });
   };
-  startGame();
+
+  function winGame() {
+      if (numberCount == 10 && currentLife == 3) {
+      	winnerTrophy = 'gold';
+      	gameRef.hide();
+      } else if (numberCount == 10 && currentLife == 2) {
+        winnerTrophy = 'silver';
+        gameRef.hide();
+      } else if (numberCount == 10 && currentLife == 1) {
+      	winnerTrophy = 'bronze';
+      	winnerTrophy.hide();
+      };
+      completeRef.show();
+      $("#congratulationMessage").html(`You have won the ${winnerTrophy} cup!`);
+      $(".trophy").addClass(`${winnerTrophy}`);
+  }
+
+  
+menuGameOver();
+startGame();
+startTheQuiz();
+trueOrFalse();
+
+
+
+
+  // this is the last curly brackets
 });
