@@ -234,11 +234,15 @@ h2 {
     margin-top: 3rem;
     }
 
-   #questions-container {
+   .center-container {
     width: 90vw;
     height: 49vh;
     margin-top: 3.4vh;
    }
+
+   #questions-container {
+	margin-top: 3.4vh;
+}
 
    #questions {
        font-size: 2rem;
@@ -252,7 +256,28 @@ h2 {
    #lifeBox {
        width: 25vw;
        height: 15vh;
-       margin-top: 2.3rem;
-       font-size: 6rem;
+       margin-top: 3.6rem;
+       font-size: 7rem;
    }
+
+   .hiddenAreas {
+       height: 100%;
+   }
+
+   h2 {
+       font-size: 3rem;
+   }
+
+   .category-buttons {
+       width: 25vw;
+       font-size: 1.2rem;
+   }
+
+   #categorySelection {
+       margin-top: 3rem;
+   }
+
+   #category h2 {
+	font-size: 3.1rem;
+}
 }
