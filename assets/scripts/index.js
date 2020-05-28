@@ -68,6 +68,7 @@ $(document).ready(function () {
     if (currentLife == 0) {
       gameFinishedRef.show();
       gameRef.hide();
+      lifeRef.html("3");
     };
   };
 
