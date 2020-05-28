@@ -72,6 +72,25 @@ $(document).ready(function () {
     };
   };
 
+  function winGame() {
+    if (numberCount == 10 && currentLife == 3) {
+      winnerTrophy = "gold";
+      completeRef.show()
+      gameRef.hide();
+    } else if (numberCount == 10 && currentLife == 2) {
+      winnerTrophy = "silver";
+      completeRef.show()
+      gameRef.hide();
+    } else if (numberCount == 10 && currentLife == 1) {
+      winnerTrophy = "bronze";
+      completeRef.show()
+      winnerTrophy.hide();
+    }
+    $("#congratulationMessage").html(`You have won the ${winnerTrophy} cup!`);
+    $(".trophy").addClass(`${winnerTrophy}`);
+    lifeRef.html("3");
+  };
+
   function menuGameOver() {
     $(".main-buttons").click(function () {
       if (event.target.value == "main-menu") {
@@ -101,23 +120,7 @@ $(document).ready(function () {
     });
   }
 
-  function winGame() {
-    if (numberCount == 10 && currentLife == 3) {
-      winnerTrophy = "gold";
-      completeRef.show()
-      gameRef.hide();
-    } else if (numberCount == 10 && currentLife == 2) {
-      winnerTrophy = "silver";
-      completeRef.show()
-      gameRef.hide();
-    } else if (numberCount == 10 && currentLife == 1) {
-      winnerTrophy = "bronze";
-      completeRef.show()
-      winnerTrophy.hide();
-    }
-    $("#congratulationMessage").html(`You have won the ${winnerTrophy} cup!`);
-    $(".trophy").addClass(`${winnerTrophy}`);
-  }
+  
 
   menuGameOver();
   startGame();
