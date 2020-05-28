@@ -101,6 +101,7 @@ $(document).ready(function () {
       gameRef.show();
       categoryRef.hide();
       $(".trophy").removeClass(`${winnerTrophy}`);
+      $("#congratulationMessage").html(` `);
     });
   }
 
