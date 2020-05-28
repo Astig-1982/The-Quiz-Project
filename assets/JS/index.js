@@ -46,7 +46,7 @@ $(document).ready(function () {
   }
 
   function trueOrFalse() {
-    $(".answer-buttons").click(function () {
+    $(".answer-buttons").click(function (event) {
       if (event.target.value == allQuestions[count].correct_answer) {
         $("#rightAnswer").html("that is the correct answer");
       } else {
@@ -69,31 +69,13 @@ $(document).ready(function () {
     if (currentLife == 0) {
       gameFinishedRef.show();
       gameRef.hide();
-      lifeRef.html("3");
+      currentLife = 3;
+      lifeRef.html(currentLife);
     };
   };
 
-  function winGame() {
-    if (numberCount == 10 && currentLife == 3) {
-      winnerTrophy = "gold";
-      completeRef.show()
-      gameRef.hide();
-    } else if (numberCount == 10 && currentLife == 2) {
-      winnerTrophy = "silver";
-      completeRef.show()
-      gameRef.hide();
-    } else if (numberCount == 10 && currentLife == 1) {
-      winnerTrophy = "bronze";
-      completeRef.show()
-      winnerTrophy.hide();
-    }
-    $("#congratulationMessage").html(`You have won the ${winnerTrophy} cup!`);
-    $(".trophy").addClass(`${winnerTrophy}`);
-    lifeRef.html("3");
-  };
-
   function menuGameOver() {
-    $(".main-buttons").click(function () {
+    $(".main-buttons").click(function (event) {
       if (event.target.value == "main-menu") {
         mainRef.show();
         gameFinishedRef.hide();
@@ -118,10 +100,33 @@ $(document).ready(function () {
     $(".category-buttons").click(function () {
       gameRef.show();
       categoryRef.hide();
+      $(".trophy").removeClass(`${winnerTrophy}`);
     });
   }
 
-  
+  function winGame() {
+    if (numberCount == 10 && currentLife == 3) {
+      winnerTrophy = "gold";
+      completeRef.show()
+      gameRef.hide();
+      currentLife = 3;
+      lifeRef.html(currentLife);
+    } else if (numberCount == 10 && currentLife == 2) {
+      winnerTrophy = "silver";
+      completeRef.show()
+      gameRef.hide();
+      currentLife = 3;
+      lifeRef.html(currentLife);
+    } else if (numberCount == 10 && currentLife == 1) {
+      winnerTrophy = "bronze";
+      completeRef.show()
+      gameRef.hide();
+      currentLife = 3;
+      lifeRef.html(currentLife);
+    };
+    $("#congratulationMessage").html(`You have won the ${winnerTrophy} cup!`);
+    $(".trophy").addClass(`${winnerTrophy}`);
+  }
 
   menuGameOver();
   startGame();
