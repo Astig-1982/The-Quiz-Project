@@ -92,6 +92,10 @@ h2 {
     color: rgb(48, 48, 48);
 }
 
+a:hover {
+    transform: scale(1.1);
+}
+
 .contact-details {
     margin-top: 1.1rem;
     text-align: center;
