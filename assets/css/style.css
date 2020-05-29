@@ -295,4 +295,7 @@ h2 {
     .view {
         left: 41vw;
     }
+    #lifeBox {
+        margin-top: 9rem;
+    }
 }
