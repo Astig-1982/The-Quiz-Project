@@ -313,4 +313,7 @@ h2 {
     .center-container {
         width: 80vw;
     }
+    #main-title {
+        margin-top: 10rem;
+    }
 }
