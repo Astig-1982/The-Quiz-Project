@@ -333,6 +333,7 @@ h2 {
     }
     #gameOver-container h2 {
         font-size: 8rem;
+        margin-top: 10rem;
     }
     #congratulations-text {
         margin-top: 6.8rem;
