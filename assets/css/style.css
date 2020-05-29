@@ -331,4 +331,14 @@ h2 {
     #questions {
         font-size: 3.9rem;
     }
+    #gameOver-container h2 {
+        font-size: 8rem;
+    }
+    #congratulations-text {
+        margin-top: 6.8rem;
+        font-size: 6rem;
+    }
+    #congratulationMessage {
+        font-size: 3.5rem;
+    }
 }
