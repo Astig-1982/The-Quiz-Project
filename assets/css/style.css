@@ -309,7 +309,7 @@ h2 {
     }
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 991px) and (max-width: 1024px) {
     .center-container {
         width: 80vw;
     }
@@ -328,8 +328,17 @@ h2 {
     #category h2 {
         margin-top: 10rem;
     }
+    #questions-container {
+        margin-top: 10vh;
+    }
     #questions {
         font-size: 3.9rem;
+    }
+    #lifeBox {
+        width: 200px;
+        height: 200px;
+        margin-top: 10rem;
+        font-size: 13.1rem;
     }
     #gameOver-container h2 {
         font-size: 8rem;
@@ -341,5 +350,11 @@ h2 {
     }
     #congratulationMessage {
         font-size: 3.5rem;
+    }
+    #gameCategory h1 {
+        font-size: 7rem;
+    }
+    #quote {
+        font-size: 2rem;
     }
 }
