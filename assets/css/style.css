@@ -317,4 +317,15 @@ h2 {
         margin-top: 10rem;
         font-size: 10rem;
     }
+    #startQuiz {
+        width: 250px;
+        height: 90px;
+    }
+    .main-buttons {
+        widows: 250px;
+        height: 90px;
+    }
+    #category h2 {
+        margin-top: 10rem;
+    }
 }
