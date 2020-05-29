@@ -279,3 +279,20 @@ h2 {
        margin-top: 24vh;
    }
 }
+
+@media (max-width: 768px) {
+    .center-container {
+        width: 80vw;
+        height: 44vh;
+        margin-top: 19vh;
+    }
+    #mainMenu {
+        margin-top: 8rem;
+    }
+    .contact-details {
+        margin: 0;
+    }
+    .view {
+        left: 41vw;
+    }
+}
