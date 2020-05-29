@@ -298,4 +298,13 @@ h2 {
     #lifeBox {
         margin-top: 9rem;
     }
+    #congratulations-container {
+        margin-top: 24vh;
+    }
+    #gameOver-container h2 {
+        margin-top: 8rem; 
+    }
+    #category h2 {
+        margin-top: 5rem;
+    }
 }
