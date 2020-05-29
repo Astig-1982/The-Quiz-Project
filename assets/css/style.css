@@ -280,7 +280,7 @@ h2 {
    }
 }
 
-@media (max-width: 768px) {
+@media (min-width: 577px) (max-width: 768px) {
     .center-container {
         width: 80vw;
         height: 44vh;
