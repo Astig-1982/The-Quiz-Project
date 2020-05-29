@@ -328,4 +328,7 @@ h2 {
     #category h2 {
         margin-top: 10rem;
     }
+    #questions {
+        font-size: 3.9rem;
+    }
 }
