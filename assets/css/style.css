@@ -25,10 +25,6 @@ h2 {
     position: relative;  
 }
 
-#address {
-    opacity: .6;
-}
-
 .center-container {
 	width: 50vw;
 	height: 45vh;
@@ -99,6 +95,7 @@ a:hover {
 .contact-details {
     margin-top: 1.1rem;
     text-align: center;
+    opacity: .8;
 }
 
 /* social icons styling ends */
