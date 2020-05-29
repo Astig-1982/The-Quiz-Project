@@ -308,3 +308,9 @@ h2 {
         margin-top: 5rem;
     }
 }
+
+@media (min-width: 1024px) {
+    .center-container {
+        width: 80vw;
+    }
+}
