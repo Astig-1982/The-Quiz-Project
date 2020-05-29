@@ -79,12 +79,14 @@ $(document).ready(function () {
       if (event.target.value == "main-menu") {
         mainRef.show();
         gameFinishedRef.hide();
+        completeRef.hide();
         $("#questions").remove();
         count = 0;
         numberCount = 1;
       } else if (event.target.value == "again") {
         categoryRef.show();
         gameFinishedRef.hide();
+        completeRef.hide()
         $("#questions").remove();
         count = 0;
         numberCount = 1;
