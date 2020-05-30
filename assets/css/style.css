@@ -184,11 +184,11 @@ a:hover {
 }
 
 .green {
-    color:#00c925;
+    color:rgb(6, 191, 43);
 }
 
 .red {
-    color: #cf1302;
+    color: rgb(163, 26, 26);
 }
 
 #rightAnswer {
