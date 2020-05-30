@@ -386,4 +386,7 @@ a:hover {
         width: 100px;
         height: 100px;
     }
+    #congratulations-container {
+        padding-top: 2.5rem;
+    }
 }
