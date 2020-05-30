@@ -191,6 +191,10 @@ a:hover {
     color: #cf1302;
 }
 
+#rightAnswer {
+    margin: .5rem 0 0 0;
+}
+
 #lifeBox {
 	width: 140px;
 	height: 140px;
