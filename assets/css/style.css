@@ -380,4 +380,10 @@ a:hover {
         margin-top: 0;
         font-size: 4rem;
     }
+    #lifeBox {
+        font-size: 6rem;
+        margin-top: 3rem;
+        width: 100px;
+        height: 100px;
+    }
 }
