@@ -374,3 +374,10 @@ a:hover {
         font-size: 2rem;
     }
 }
+
+@media (min-width: 1025px) {
+    #category h2 {
+        margin-top: 0;
+        font-size: 4rem;
+    }
+}
