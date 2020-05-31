@@ -60,8 +60,6 @@ function startTheQuiz() {
       $("#questions").html(`${numberCount}. ${allQuestions[count].question}`);
   }
 
-
-
   function endOfGame() {
     if (currentLife == 0) {
       gameFinishedRef.show();
@@ -71,7 +69,31 @@ function startTheQuiz() {
     };
   };
 
-  function menuGameOver() {
+  function winGame() {
+    if (numberCount == 10 && currentLife == 3) {
+      winnerTrophy = "gold";
+      winRef.show()
+      gameRef.hide();
+      currentLife = 3;
+      lifeRef.html(currentLife);
+    } else if (numberCount == 10 && currentLife == 2) {
+      winnerTrophy = "silver";
+      winRef.show()
+      gameRef.hide();
+      currentLife = 3;
+      lifeRef.html(currentLife);
+    } else if (numberCount == 10 && currentLife == 1) {
+      winnerTrophy = "bronze";
+      winRef.show()
+      gameRef.hide();
+      currentLife = 3;
+      lifeRef.html(currentLife);
+    };
+    $("#congratulationMessage").html(`You have won the ${winnerTrophy} cup!`);
+    $(".trophy").addClass(`${winnerTrophy}`);
+  }
+
+  function menuGameFinished() {
     $(".main-buttons").click(function (event) {
       if (event.target.value == "main-menu") {
         mainRef.show();
@@ -104,31 +126,9 @@ function startTheQuiz() {
     });
   }
 
-  function winGame() {
-    if (numberCount == 10 && currentLife == 3) {
-      winnerTrophy = "gold";
-      winRef.show()
-      gameRef.hide();
-      currentLife = 3;
-      lifeRef.html(currentLife);
-    } else if (numberCount == 10 && currentLife == 2) {
-      winnerTrophy = "silver";
-      winRef.show()
-      gameRef.hide();
-      currentLife = 3;
-      lifeRef.html(currentLife);
-    } else if (numberCount == 10 && currentLife == 1) {
-      winnerTrophy = "bronze";
-      winRef.show()
-      gameRef.hide();
-      currentLife = 3;
-      lifeRef.html(currentLife);
-    };
-    $("#congratulationMessage").html(`You have won the ${winnerTrophy} cup!`);
-    $(".trophy").addClass(`${winnerTrophy}`);
-  }
+  
 
-  menuGameOver();
+  menuGameFinished();
   startGame();
   startTheQuiz();
 
