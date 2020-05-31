@@ -11,6 +11,9 @@ let allQuestions = [];
 let count = 0;
 let numberCount = 1;
 let winnerTrophy;
+let categoryTitle = $("#catTitle");
+let categoryQuote = $("#quote");
+
 
 
 
@@ -38,8 +41,29 @@ function startTheQuiz() {
             `<p id="questions">${numberCount}. ${allQuestions[count].question}</p>`
           );
         });
+        categoryDisplay(this.id);
     });
   }
+
+  /* the function below is for displaying the category title and its relevant quote */
+
+  function categoryDisplay(categoryId) {
+  switch (categoryId) {
+           case "23": categoryTitle.html("history");
+           categoryQuote.html("it is very important history");
+           break
+           case "17": categoryTitle.html("science");
+           categoryQuote.html('"the good thing about science is that is true wether or not you believe in it"<br>Dr.N deGrasse Tyson');
+           break
+           case "22": categoryTitle.html("geography");
+           categoryQuote.html("it is very important geopgraphy anytime");
+           break
+           case "9": categoryTitle.html("general");
+           categoryQuote.html("it is very important general about the world");
+  }
+}
+
+
 
   /* the event below is for assigning true or false value to the questions */
 
