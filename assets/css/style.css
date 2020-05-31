@@ -17,6 +17,11 @@ h2 {
     text-transform: uppercase;
 }
 
+.row {
+    margin: 0;
+    padding: 0;
+}
+
 /* landing page starts here */
 
 .landing {
@@ -100,26 +105,6 @@ a:hover {
 
 /* social icons styling ends */
 
-.view {
-    position: absolute;
-    bottom: 0;
-    left: 44.7vw;
-}
-
-#quickView {
-    color: #ced7d8;
-    width: 150px;
-    height: 30px;
-    transition-property: background-color, color;
-    transition-duration: .2s;
-    transition-timing-function: ease;
-}
-
-#quickView:hover {
-    background-color: #7fe7dc;
-    color: #f47a60;
-}
-
 .row {
     margin: 0;
     padding: 0;
@@ -193,6 +178,7 @@ a:hover {
 
 #rightAnswer {
     margin: 2rem 0 0 0;
+    font-weight: 900;
 }
 
 #lifeBox {
