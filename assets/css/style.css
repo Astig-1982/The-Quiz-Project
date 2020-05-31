@@ -192,7 +192,7 @@ a:hover {
 }
 
 #rightAnswer {
-    margin: .5rem 0 0 0;
+    margin: 2rem 0 0 0;
 }
 
 #lifeBox {
@@ -379,6 +379,8 @@ a:hover {
     }
 }
 
+
+
 @media (min-width: 1025px) {
     #category h2 {
         margin-top: 0;
@@ -392,5 +394,8 @@ a:hover {
     }
     #congratulations-container {
         padding-top: 2.5rem;
+    }
+    #rigthAnswer {
+        margin: .5rem 0 0 0;
     }
 }
