@@ -30,14 +30,27 @@ function startTheQuiz() {
     });
   }
 
-  function trueOrFalse() {
-    $(".answer-buttons").click(function (event) {
-      if (event.target.value == allQuestions[count].correct_answer) {
-        $("#rightAnswer").removeClass("red").addClass("green").html("Correct!");
-      } else {
-        $("#rightAnswer").removeClass("green").addClass("red").html("Incorrect!");
+  $(".answer-buttons").click(function(event) {
+    if (event.target.value == allQuestions[count].correct_answer) {
+      trueAnswer();
+    } else {
+      falseAnswer();
+    };
+    nextQuestion();
+    endOfGame();
+    winGame();
+  })
+
+  function trueAnswer() {
+     $("#rightAnswer").removeClass("red").addClass("green").html("Correct!");
+  }
+
+  function falseAnswer() {
+    $("#rightAnswer").removeClass("green").addClass("red").html("Incorrect!");
         lifeRef.html(--currentLife);
-      }
+  }
+
+  function nextQuestion() {
       let arrayLength = allQuestions.length;
       if (count == arrayLength) {
         count = 0;
@@ -45,10 +58,9 @@ function startTheQuiz() {
       count++;
       numberCount++;
       $("#questions").html(`${numberCount}. ${allQuestions[count].question}`);
-      endOfGame();
-      winGame();
-    });
   }
+
+
 
   function endOfGame() {
     if (currentLife == 0) {
@@ -119,7 +131,6 @@ function startTheQuiz() {
   menuGameOver();
   startGame();
   startTheQuiz();
-  trueOrFalse();
 
   // this is the last curly brackets
 });
