@@ -99,23 +99,26 @@ function startTheQuiz() {
         mainRef.show();
         gameFinishedRef.hide();
         winRef.hide();
-        $("#questions").remove();
         count = 0;
         numberCount = 1;
       } else if (event.target.value == "again") {
         categoryRef.show();
         gameFinishedRef.hide();
         winRef.hide()
-        $("#questions").remove();
         count = 0;
         numberCount = 1;
       };
+      removeQuestions();
       rightAnswer();
     });
   };
 
   function rightAnswer() {
       $("#rightAnswer").html(" ");
+  }
+
+  function removeQuestions() {
+      $("#questions").remove();
   }
 
   function startGame() {
