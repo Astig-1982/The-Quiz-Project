@@ -33,9 +33,9 @@ function startTheQuiz() {
   function trueOrFalse() {
     $(".answer-buttons").click(function (event) {
       if (event.target.value == allQuestions[count].correct_answer) {
-        $("#rightAnswer").html("that is the correct answer");
+        $("#rightAnswer").removeClass("red").addClass("green").html("Correct!");
       } else {
-        $("#rightAnswer").html("that is not the correct answer");
+        $("#rightAnswer").removeClass("green").addClass("red").html("Incorrect!");
         lifeRef.html(--currentLife);
       }
       let arrayLength = allQuestions.length;
