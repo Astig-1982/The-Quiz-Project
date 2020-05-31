@@ -94,7 +94,7 @@ function startTheQuiz() {
   }
 
   function menuGameFinished() {
-    $(".main-buttons").click(function (event) {
+    $(".mainMenuButtons").click(function (event) {
       if (event.target.value == "main-menu") {
         mainRef.show();
         gameFinishedRef.hide();
@@ -110,8 +110,13 @@ function startTheQuiz() {
         count = 0;
         numberCount = 1;
       };
+      rightAnswer();
     });
   };
+
+  function rightAnswer() {
+      $("#rightAnswer").html(" ");
+  }
 
   function startGame() {
     $("#startQuiz").click(function () {
