@@ -2,7 +2,7 @@ const mainRef = $("#mainMenu");
 const gameRef = $("#gamePage");
 const categoryRef = $("#categoryMenu");
 const gameFinishedRef = $("#gameOver");
-const completeRef = $("#gameCompleted");
+const winRef = $("#gameWin");
 let currentLife = 3;
 const lifeRef = $("#lifeBox");
 lifeRef.html(currentLife);
@@ -76,14 +76,14 @@ function startTheQuiz() {
       if (event.target.value == "main-menu") {
         mainRef.show();
         gameFinishedRef.hide();
-        completeRef.hide();
+        winRef.hide();
         $("#questions").remove();
         count = 0;
         numberCount = 1;
       } else if (event.target.value == "again") {
         categoryRef.show();
         gameFinishedRef.hide();
-        completeRef.hide()
+        winRef.hide()
         $("#questions").remove();
         count = 0;
         numberCount = 1;
@@ -107,19 +107,19 @@ function startTheQuiz() {
   function winGame() {
     if (numberCount == 10 && currentLife == 3) {
       winnerTrophy = "gold";
-      completeRef.show()
+      winRef.show()
       gameRef.hide();
       currentLife = 3;
       lifeRef.html(currentLife);
     } else if (numberCount == 10 && currentLife == 2) {
       winnerTrophy = "silver";
-      completeRef.show()
+      winRef.show()
       gameRef.hide();
       currentLife = 3;
       lifeRef.html(currentLife);
     } else if (numberCount == 10 && currentLife == 1) {
       winnerTrophy = "bronze";
-      completeRef.show()
+      winRef.show()
       gameRef.hide();
       currentLife = 3;
       lifeRef.html(currentLife);
