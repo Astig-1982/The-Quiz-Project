@@ -13,7 +13,6 @@ let count = 0;
 let numberCount = 1;
 let winnerTrophy;
 
-
 /* the function below is for fetching the questions and rendering them into the DOM */
 
 $(document).ready(function () {
@@ -39,9 +38,9 @@ function startTheQuiz() {
 
   $(".answer-buttons").click(function(event) {
     if (event.target.value == allQuestions[count].correct_answer) {
-      trueAnswer();
+      correctAnswer();
     } else {
-      falseAnswer();
+      incorrectAnswer();
     };
     nextQuestion();
     endOfGame();
@@ -50,13 +49,13 @@ function startTheQuiz() {
 
   /* the function below is for the outcome of #rightAnswer inner HTML if the answer is correct */
 
-  function trueAnswer() {
+  function correctAnswer() {
      $("#rightAnswer").removeClass("red").addClass("green").html("Correct!");
   }
 
   /* the function below is for the outcome #rightAnswer inner HTML if the answer is incorrect */
 
-  function falseAnswer() {
+  function incorrectAnswer() {
     $("#rightAnswer").removeClass("green").addClass("red").html("Incorrect!");
         lifeRef.html(--currentLife);
   }
