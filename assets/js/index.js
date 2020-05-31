@@ -97,13 +97,11 @@ function startTheQuiz() {
     $(".mainMenuButtons").click(function (event) {
       if (event.target.value == "main-menu") {
         mainRef.show();
-        gameFinishedRef.hide();
-        winRef.hide();
       } else if (event.target.value == "again") {
         categoryRef.show();
-        gameFinishedRef.hide();
-        winRef.hide();
       };
+      gameFinishedRef.hide();
+      winRef.hide();
       removeQuestions();
       resetCounting();
       rightAnswer();
