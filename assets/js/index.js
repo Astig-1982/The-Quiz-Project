@@ -7,15 +7,22 @@ const gameFinishedRef = $("#gameOver");
 const winRef = $("#gameWin");
 let currentLife = 3;
 const lifeRef = $("#lifeBox");
-lifeRef.html(currentLife);
 let allQuestions = [];
 let count = 0;
 let numberCount = 1;
 let winnerTrophy;
 
-/* the function below is for fetching the questions and rendering them into the DOM */
+
 
 $(document).ready(function () {
+
+    /* the function below is for setting the player's life to 3  */
+function playerLife() {
+       lifeRef.html(currentLife);
+   }
+
+   /* the function below is for fetching the questions and rendering them into the DOM */
+
 function startTheQuiz() {
     $(".category-buttons").click(function () {
       fetch(
@@ -79,7 +86,7 @@ function startTheQuiz() {
       gameFinishedRef.show();
       gameRef.hide();
       currentLife = 3;
-      lifeRef.html(currentLife);
+      playerLife();
     };
   };
 
@@ -91,19 +98,19 @@ function startTheQuiz() {
       winRef.show()
       gameRef.hide();
       currentLife = 3;
-      lifeRef.html(currentLife);
+      playerLife();
     } else if (numberCount == 10 && currentLife == 2) {
       winnerTrophy = "silver";
       winRef.show()
       gameRef.hide();
       currentLife = 3;
-      lifeRef.html(currentLife);
+      playerLife();
     } else if (numberCount == 10 && currentLife == 1) {
       winnerTrophy = "bronze";
       winRef.show()
       gameRef.hide();
       currentLife = 3;
-      lifeRef.html(currentLife);
+      playerLife();
     };
     $("#congratulationMessage").html(`You have won the ${winnerTrophy} cup!`);
     $(".trophy").addClass(`${winnerTrophy}`);
@@ -161,6 +168,7 @@ function startTheQuiz() {
   }
 
   menuGameFinished();
+  playerLife();
   startGame();
   startTheQuiz();
 });
