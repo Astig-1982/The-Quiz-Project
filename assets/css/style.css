@@ -255,6 +255,12 @@ a:hover {
 /* media queries start here */
 
 @media (max-width: 767px) {
+    #mainMenu {
+        padding: 0;
+    }
+    #title-container {
+        margin-top: 15.9vh;
+    }
    .main-buttons {
     margin-top: 3rem;
     }
@@ -263,15 +269,18 @@ a:hover {
     height: 49vh;
     margin-top: 3.4vh;
    }
+   ul {
+       display: inline-flex;
+   }
    #gameCategory {
        margin-top: 0;
    }
    #quote {
        height: 10vh;
-       font-size: 1.4rem;
+       font-size: 1.5rem;
    }
    #questions-container {
-	margin-top: 6vh;
+	margin-top: 7vh;
 }
    #questions {
        font-size: 2rem;
