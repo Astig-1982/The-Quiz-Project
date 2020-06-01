@@ -185,11 +185,12 @@ a:hover {
 }
 
 .red {
-    color: rgb(163, 26, 26);
+    color: rgb(153, 43, 43);
 }
 
 #rightAnswer {
     margin: 2rem 0 0 0;
+    font-family: 'Montserrat', sans-serif;
     font-weight: 600;
 }
 
