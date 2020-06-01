@@ -50,16 +50,16 @@ function startTheQuiz() {
   function categoryDisplay(categoryId) {
   switch (categoryId) {
            case "23": categoryTitle.html("history");
-           categoryQuote.html("it is very important history");
+           categoryQuote.html(`"History is a relentless master. It has no present, only the past rushing into the future. To try to hold fast is to be swept aside."<br>John F.Kennedy`);
            break
            case "17": categoryTitle.html("science");
-           categoryQuote.html('"the good thing about science is that is true wether or not you believe in it"<br>Dr.N deGrasse Tyson');
+           categoryQuote.html(`"the good thing about science is that is true wether or not you believe in it."<br>Dr. N.deGrasse Tyson`);
            break
            case "22": categoryTitle.html("geography");
-           categoryQuote.html("it is very important geopgraphy anytime");
+           categoryQuote.html(`"Geography is an earthly subject, but a heavenly science.<br>Edmund Burke"`);
            break
            case "9": categoryTitle.html("general");
-           categoryQuote.html("it is very important general about the world");
+           categoryQuote.html(`"Knowledge is love and light and vision."<br>Hellen Keller`);
   }
 }
 
