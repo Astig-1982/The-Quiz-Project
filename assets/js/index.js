@@ -50,16 +50,20 @@ function startTheQuiz() {
   function categoryDisplay(categoryId) {
   switch (categoryId) {
            case "23": categoryTitle.html("history");
-           categoryQuote.html(`"History is a relentless master. It has no present, only the past rushing into the future. To try to hold fast is to be swept aside."<br>John F.Kennedy`);
+           categoryQuote.html(`"History is a relentless master. It has no present, only the past rushing into the future. To try to hold fast is to be swept aside."<br><a href="https://en.wikipedia.org/wiki/John_F._Kennedy"aria-label="find out about John F.Kennedy" target="_blank"
+						rel="noopener" class="quote-authors">John F.Kennedy</a>`);
            break
            case "17": categoryTitle.html("science");
-           categoryQuote.html(`"the good thing about science is that is true wether or not you believe in it."<br>Dr. N.deGrasse Tyson`);
+           categoryQuote.html(`"the good thing about science is that is true wether or not you believe in it."<br><a href="https://en.wikipedia.org/wiki/Neil_deGrasse_Tyson"aria-label="find out about Dr. N.deGrasse Tyson" target="_blank"
+						rel="noopener" class="quote-authors">Dr. N.deGrasse Tyson</a>`);
            break
            case "22": categoryTitle.html("geography");
-           categoryQuote.html(`"Geography is an earthly subject, but a heavenly science.<br>Edmund Burke"`);
+           categoryQuote.html(`"Geography is an earthly subject, but a heavenly science.<br><a href="https://en.wikipedia.org/wiki/Edmund_Burke"aria-label="find out about Edmund Burke" target="_blank"
+						rel="noopener" class="quote-authors">Edmund Burke</a>"`);
            break
            case "9": categoryTitle.html("general");
-           categoryQuote.html(`"Knowledge is love and light and vision."<br>Hellen Keller`);
+           categoryQuote.html(`"Knowledge is love and light and vision."<br><a href="https://en.wikipedia.org/wiki/Helen_Keller"aria-label="find out about Helen Keller" target="_blank"
+						rel="noopener" class="quote-authors">Helen Keller</a>`);
   }
 }
 
