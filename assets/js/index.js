@@ -47,8 +47,8 @@ function startTheQuiz() {
   function categoryDisplay(categoryId) {
   switch (categoryId) {
            case "23": categoryTitle.html("history");
-           categoryQuote.html(`"History is a relentless master. It has no present, only the past rushing into the future. To try to hold fast is to be swept aside."<br><a href="https://en.wikipedia.org/wiki/John_F._Kennedy"aria-label="find out about John F.Kennedy" target="_blank"
-						rel="noopener" class="quote-authors">John F.Kennedy</a>`);
+           categoryQuote.html(`"History is who we are and why we are the way we are."<br><a href="https://en.wikipedia.org/wiki/David_McCullough"aria-label="find out about John F.Kennedy" target="_blank"
+						rel="noopener" class="quote-authors">David McCullough</a>`);
            break
            case "17": categoryTitle.html("science");
            categoryQuote.html(`"the good thing about science is that is true wether or not you believe in it."<br><a href="https://en.wikipedia.org/wiki/Neil_deGrasse_Tyson"aria-label="find out about Dr. N.deGrasse Tyson" target="_blank"
