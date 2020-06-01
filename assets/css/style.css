@@ -41,7 +41,7 @@ h2 {
     font-family: 'Lato', sans-serif;
 }
 
-#main-title {
+h1 {
     font-family: 'Balsamiq Sans', cursive, sans-serif;
     font-weight: 500;
 }
@@ -139,6 +139,10 @@ a:hover {
 
 .quote-section {
 	text-align: center;
+}
+
+#quote {
+    font-family: 'Montserrat', sans-serif;
 }
 
 #gameCategory {
