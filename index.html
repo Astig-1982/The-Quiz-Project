@@ -19,22 +19,24 @@
   <body>
     <div id="mainMenu" class="container-fluid landing">
       <header class="row">
-        <div class="col-sm-12 contact-details">
-          <div class="col-sm-12 contact-details">
+      <div class="col-xs-12 contact-details">
               The Brain Corporation, 131 Gem High Street, <strong>PO Box</strong> 59 Sacramento, CA, USA | Call us:
               916-248-5005
           </div>
-        </div>
       </header>
       <div class="row">
-        <div class="col-sm-12">
+        <div class="col-xs-12">
           <div class="jumbotron title center-container">
             <h1 id="main-title" class="uppercase">master quiz</h1>
             <h2>The Quick Way To Test Your Knowledge</h2>
             <button id="startQuiz" class="main-buttons">start quiz</button>
           </div>
-          <div class="row">
-            <ul class="nav flex-column social">
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-xs-12">
+          <ul class="nav flex-column social">
               <li class="nav-item">
                 <a href="https://www.facebook.com/"
                   aria-label="connect with us on facebook"
@@ -69,18 +71,16 @@
                   ><i class="fab fa-youtube-square"></i></a>
               </li>
             </ul>
-          </div>
-          
         </div>
       </div>
-    </div>
-    <!-- landing page ends here -->
+      </div>
 
-    <!-- the category options section starts here -->
-    <section id="categoryMenu" class="container-fluid hiddenAreas">
-      <div class="row">
-        <div class="col-sm-12">
-          <div id="category" class="jumbotron center-container">
+      <!--category page starts here -->
+
+      <section id="categoryMenu" class="container-fluid hiddenAreas">
+       <div class="row">
+         <div class="col-xs-12">
+           <div id="category" class="jumbotron center-container">
             <h2>Choose A Category</h2>
             <div id="categorySelection">
               <button id="17" class="category-buttons main-buttons">
@@ -89,8 +89,8 @@
               <button id="23" class="category-buttons main-buttons">
                 history
               </button>
-            </div>
-            <div>
+              </div>
+              <div>
               <button id="9" class="category-buttons main-buttons">
                 general
               </button>
@@ -98,21 +98,25 @@
                 geography
               </button>
             </div>
+           </div>
+         </div>
+       </div>
+      </section>
+
+      <!-- game section starts here -->
+
+      <section id="gamePage" class="container-fluid hiddenAreas">
+        <div class="row">
+          <div id="gameCategory" class="col-xs-12 quote-section">
+            <h1 id="catTitle" class="uppercase"></h1>
           </div>
         </div>
-      </div>
-    </section>
-    <!-- the category options section ends here -->
-
-    <!-- the game section starts here -->
-    <section id="gamePage" class="container-fluid hiddenAreas">
-      <div class="row">
-        <div id="gameCategory" class="col-sm-12 quote-section">
-          <h1 id="catTitle" class="uppercase"></h1>
+        <div class="row">
+           <div id="quote" class="col-xs-12 quote-section">
+           </div>
         </div>
-        <div id="quote" class="col-sm-12 quote-section">
-        </div>
-        <div class="col-sm-12">
+        <div class="row">
+          <div class="col-xs-12">
           <div id="questions-container" class="jumbotron center-container">
             <button value="True" class="main-buttons answer-buttons">
               true
@@ -122,15 +126,14 @@
             ><br />
             <p id="rightAnswer" class="uppercase"></p>
           </div>
+          </div>
         </div>
-      </div>
-      <div class="row">
-        <div class="col-sm-12">
+        <div class="row">
+          <div class="col-sm-12">
           <div id="lifeBox"></div>
         </div>
-      </div>
-    </section>
-    <!-- the game section ends here -->
+        </div>
+      </section>
 
     <!-- the game over section starts here -->
     <section id="gameOver" class="container-fluid hiddenAreas">
