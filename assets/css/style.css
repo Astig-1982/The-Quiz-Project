@@ -143,6 +143,16 @@ a:hover {
 
 #quote {
     font-family: 'Montserrat', sans-serif;
+    text-transform: capitalize;
+}
+
+.quote-authors {
+    color: rgb(48, 48, 48);
+    font-weight: 500;
+}
+
+.quote-authors:hover {
+    color: rgb(48, 48, 48);
 }
 
 #gameCategory {
@@ -159,10 +169,6 @@ a:hover {
 
 #scienceOption h1 {
 	font-size: 4rem;
-}
-
-#quote {
-	text-transform: capitalize;
 }
 
 #questions {
