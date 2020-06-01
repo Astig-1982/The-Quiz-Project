@@ -254,7 +254,7 @@ a:hover {
 
 /* media queries start here */
 
-@media (max-width: 576px) {
+@media (max-width: 767px) {
    .main-buttons {
     margin-top: 3rem;
     }
@@ -263,12 +263,22 @@ a:hover {
     height: 49vh;
     margin-top: 3.4vh;
    }
+   #gameCategory {
+       margin-top: 0;
+   }
+   #quote {
+       height: 10vh;
+       font-size: 1.4rem;
+   }
    #questions-container {
-	margin-top: 3.4vh;
+	margin-top: 6vh;
 }
    #questions {
        font-size: 2rem;
        height: 43%;
+   }
+   #rightAnswer {
+       margin-top: .9rem;
    }
    .main-buttons {
        margin-top: 1rem;
@@ -276,8 +286,8 @@ a:hover {
    #lifeBox {
        width: 25vw;
        height: 15vh;
-       margin-top: 3.6rem;
-       font-size: 7rem;
+       margin-top: 2.4rem;
+       font-size: 6.2rem;
    }
    .hiddenAreas {
        height: 100%;
