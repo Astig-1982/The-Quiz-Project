@@ -116,18 +116,24 @@ function startTheQuiz() {
       gameRef.hide();
       currentLife = 3;
       playerLife();
+      $(".trophy").removeClass("silver");
+      $(".trophy").removeClass("bronze");
     } else if (numberCount == 10 && currentLife == 2) {
       winnerTrophy = "silver";
       winRef.show();
       gameRef.hide();
       currentLife = 3;
       playerLife();
+      $(".trophy").removeClass("gold");
+      $(".trophy").removeClass("bronze");
     } else if (numberCount == 10 && currentLife == 1) {
       winnerTrophy = "bronze";
       winRef.show()
       gameRef.hide();
       currentLife = 3;
       playerLife();
+      $(".trophy").removeClass("gold");
+      $(".trophy").removeClass("silver");
     };
     $("#congratulationMessage").html(`You have won the ${winnerTrophy} cup!`);
     $(".trophy").addClass(`${winnerTrophy}`);
