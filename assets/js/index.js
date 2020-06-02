@@ -27,8 +27,15 @@ function playerLife() {
    /* the function below is for fetching the questions and rendering them into the DOM */
 function startTheQuiz() {
     $(".category-buttons").click(function () {
+        fetchQuiz(this.id);
+        categoryDisplay(this.id);
+    });
+  }
+  
+  /* the function below fetches the questions from the API and calls the renderQuestions() function */
+  function fetchQuiz(catId) {
       fetch(
-        `https://opentdb.com/api.php?amount=10&category=${this.id}&type=boolean`
+        `https://opentdb.com/api.php?amount=10&category=${catId}&type=boolean`
       )
         .then((res) => res.json())
         .then((data) => {
@@ -38,10 +45,9 @@ function startTheQuiz() {
           console.log(allQuestions);
           renderQuestions();
         });
-        categoryDisplay(this.id);
-    });
   }
-
+  
+  /* the function below renders the questions into the DOM */
   function renderQuestions() {
     $("#questions-container").prepend(
             `<p id="questions">${numberCount}. ${allQuestions[count].question}</p>`
