@@ -36,12 +36,16 @@ function startTheQuiz() {
             return question;
           });
           console.log(allQuestions);
-          $("#questions-container").prepend(
-            `<p id="questions">${numberCount}. ${allQuestions[count].question}</p>`
-          );
+          renderQuestions();
         });
         categoryDisplay(this.id);
     });
+  }
+
+  function renderQuestions() {
+    $("#questions-container").prepend(
+            `<p id="questions">${numberCount}. ${allQuestions[count].question}</p>`
+          );
   }
 
   /* the function below is for displaying the category title and its relevant quote */
