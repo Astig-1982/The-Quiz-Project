@@ -274,6 +274,9 @@ a:hover {
    .main-buttons {
     margin-top: 3rem;
     }
+    .social li {
+	margin: 3rem
+}
    .center-container {
     width: 90vw;
     height: 49vh;
