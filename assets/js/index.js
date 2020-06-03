@@ -57,6 +57,7 @@ function startTheQuiz() {
           );
   }
 
+  /* the function below will display error message in case an error is caught while fetching data */
   function errorMessage() {
     $("#questions-container").prepend(
             `<p id="questions">Apologise, there seems to be a problem with our database.<br>
