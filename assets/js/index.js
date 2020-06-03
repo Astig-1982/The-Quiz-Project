@@ -44,6 +44,9 @@ function startTheQuiz() {
           });
           console.log(allQuestions);
           renderQuestions();
+        })
+        .catch((err) => {
+          errorMessage();
         });
   }
   
@@ -51,6 +54,13 @@ function startTheQuiz() {
   function renderQuestions() {
     $("#questions-container").prepend(
             `<p id="questions">${numberCount}. ${allQuestions[count].question}</p>`
+          );
+  }
+
+  function errorMessage() {
+    $("#questions-container").prepend(
+            `<p id="questions">Apologise, there seems to be a problem with our database.<br>
+            Please try again later.</p>`
           );
   }
 
