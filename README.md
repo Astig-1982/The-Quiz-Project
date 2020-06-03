@@ -39,5 +39,5 @@ The goal of the app is to offer the users an easy and quick way to play the quiz
 
 ### Fonts:
 
-I have used [Lato](https://fonts.google.com/specimen/Lato?query=lato) as a main font for the entire app. In my opinion it is a clear and easy to read font and I believe it is especially important for displaying the questions in this font. In this case the user will be able to quickly read and understand the text, his only being focus on the right answer.
+I have used [LATO](https://fonts.google.com/specimen/Lato?query=lato) as a main font for the entire app. In my opinion it is a clear and easy to read font and I believe it is especially important for displaying the questions in this font. In this case the user will be able to quickly read and understand the text, his only being focus on the right answer.
 
