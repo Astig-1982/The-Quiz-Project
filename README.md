@@ -41,3 +41,10 @@ The goal of the app is to offer the users an easy and quick way to play the quiz
 I chose to use [LATO](https://fonts.google.com/specimen/Lato?query=lato) as a main font for the entire app. In my opinion it is a clear and easy to read font and I believe it is especially important for displaying the questions in this font. In this case the user will be able to quickly read and understand the text, his only being focus on the right answer.
 
 I chose to use [BALSAMIQ SANS](https://fonts.google.com/specimen/Balsamiq+Sans?query=balsamiq) for the main title and the name of the category display, both being h1 elements. Although I wanted to keep a simple and clear design, I believe that for the main titles, having large font sizes, it will still be very easy to read by everyone and in the same time it will give a bit of "artistic" touch  to the game, making it more attractive for the eye and "friendly" for the user.
+
+I chose to use [MONTESARRAT](https://fonts.google.com/specimen/Montserrat?query=montserrat) for the call-to-action buttons because, in my opinion, it is similar to lato (but in the same time with small differences) and will help in keeping the uniformity of the game.
+
+### Icons: 
+
+I used the [TROPHY](https://fontawesome.com/icons/trophy?style=solid) icon from [FONT AWSOME](https://fontawesome.com/) to diplay the player's reward, in this way the user will have a more clear and significant image of the reward.
+
