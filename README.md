@@ -55,3 +55,7 @@ I have used worm and soft colors for the project as I wanted to protect the user
 * Primary: **Light Blue** #7fe7dc. I chose this as a main color because covering most of the viewport at all section, in my opinion, it fits to be a warm and in the same time happy and to a certain level bright color. It will help in keeping the player relaxed and exited.
 
 * Secondary: **Shade of Dark Blue** #316879. I chose this color for the center container because it is close to the main color, in the same time providing the sufficient contrast in relation to the rest of the page. It makes the app clear and uniform.
+
+* Tertionary color: **Orange** #f47a60. I chose this color for call-to-action buttons because it provides the optimal contrast from the rest of the colors, making the buttons stand up on the viewport. As a result it makes the app more intuitive.
+
+* Text color: **Light Grey** #ced7d8. This color makes the text visible in contrast with the dark blue and orange used for the center container and buttons, makinging it easy to read. It's warm shade of light grey contributes to the uniformity of the app. 
