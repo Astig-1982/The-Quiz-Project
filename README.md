@@ -31,4 +31,13 @@ Smart Quiz main target is the people with a basic and above general knowledge in
 
 * Providing an interactive quiz in order to attract players and make the users hungry for more future apps from the developer.
 * Providing a quick way to start the quiz and an intuitive way to operate the app in order to make the users play severall times in a row when they open the app.
-* Providing a game that will finish quickly, in this way the user can start and finish a game everytime and everywwhere, even if she/he has just a few minutes to spare (like waiting in a bus stop or queing for something).  
+* Providing a game that will finish quickly, in this way the user can start and finish a game everytime and everywwhere, even if she/he has just a few minutes to spare (like waiting in a bus stop or queing for something).
+
+## Design choices 
+
+The goal of the app is to offer the users an easy and quick way to play the quiz. Therefore I have chosen a very simple and clear design without creating for the user potential distractions, especially when in the middle of the game.
+
+### Fonts:
+
+I have used [Lato](https://fonts.google.com/specimen/Lato?query=lato) as a main font for the entire app. In my opinion it is a clear and easy to read font and I believe it is especially important for displaying the questions in this font. In this case the user will be able to quickly read and understand the text, his only being focus on the right answer.
+
