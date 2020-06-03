@@ -48,3 +48,10 @@ I chose to use [MONTESARRAT](https://fonts.google.com/specimen/Montserrat?query=
 
 I used the [TROPHY](https://fontawesome.com/icons/trophy?style=solid) icon from [FONT AWSOME](https://fontawesome.com/) to diplay the player's reward, in this way the user will have a more clear and significant image of the reward.
 
+### Colors:
+
+I have used worm and soft colors for the project as I wanted to protect the user from eye fatigue due to long exposure to bright colors on the screen. This may also lead to longer experiences of the user with the game.
+
+* Primary: **Light Blue** #7fe7dc. I chose this as a main color because covering most of the viewport at all section, in my opinion, it fits to be a warm and in the same time happy and to a certain level bright color. It will help in keeping the player relaxed and exited.
+
+* Secondary: **Shade of Dark Blue** #316879. I chose this color for the center container because it is close to the main color, in the same time providing the sufficient contrast in relation to the rest of the page. It makes the app clear and uniform.
