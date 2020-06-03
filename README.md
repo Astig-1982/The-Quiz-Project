@@ -17,20 +17,18 @@ Smart Quiz main target is the people with a basic and above general knowledge in
 * A way to follow the developer on social media. In this case you will be on track with new potential releases or updates.
 * A quiz with different outcomes, depending on how many answers are right or wrong.
 
-### Users Stories
+### Users Stories  
 
-**Mr. Feynman**
+*As a user I am looking for a quiz game that will challenge me on an intelectual level and will be fun to play in the same time so I can always have handy a fun general knowledge tool in my pocket.
 
-*As a user I am looking for a quiz game that will challenge me on an intelectual level and will be fun to play in the same time so I can always have handy a fun general knowledge tool in my pocket.*
+*As a user I am looking for a quiz app that will be ready to start as soon as I open the app, without making me navigate through different menus before I have the option to actually start the quiz.
 
-**Mrs. Goodall**
+*As a user I would like to be able to keep track through social media of the app updates and other future realeses from the developer.
 
-*There are quiz apps today that make you navigate different menus before you actually start playing. I am looking for something straight forward and ready to start as soon as I open the app.*
+*As a user I would like a quiz app with a simple and clear design in order to focus on the questions rather than to be distracted by other features of the app during the game.
 
-**Albert**
+*As a user I would like to have different categories to chose from.
 
-*As a daily user I expect to have an easy away of contacting the developer. Using these kind of apps on a daily basis, I always might have some suggestions, or, unfortunately, complaints, and when I do I would like to have the possibility to send them to the developer through a very simple and intuitive contact form.*   
+*As a user I would like to have different awards at the end of the game depending of my game performances.
 
-
-
-
+*As a user I would like to be have the option to restart the game immediately if I fail or if I finish the game, without having to the main menu.
