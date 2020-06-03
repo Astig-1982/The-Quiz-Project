@@ -58,4 +58,10 @@ I have used worm and soft colors for the project as I wanted to protect the user
 
 * Tertionary color: **Orange** #f47a60. I chose this color for call-to-action buttons because it provides the optimal contrast from the rest of the colors, making the buttons stand up on the viewport. As a result it makes the app more intuitive.
 
-* Text color: **Light Grey** #ced7d8. This color makes the text visible in contrast with the dark blue and orange used for the center container and buttons, makinging it easy to read. It's warm shade of light grey contributes to the uniformity of the app. 
+* Text color: **Light Grey** #ced7d8. This color makes the text visible in contrast with the dark blue and orange used for the center container and buttons, makinging it easy to read. It's warm shade of light grey contributes to the uniformity of the app.
+
+I have also used **Green** rgb(6, 191, 43) and **Red** rgb(153, 43, 43) for the color of the text displayed when answering the question, as they they have the same global significance indicating good or wrong outcomes.
+
+### Background:
+
+I have chosen not to use any background images throughout the entire game, because I believe that the combination of colors used is sufficient to keep the player focused and excited, without additional distractions or features.  
