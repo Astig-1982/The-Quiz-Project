@@ -89,3 +89,20 @@ I built the wireframe for this project using [BALSAMIQ](https://balsamiq.com/). 
 * [Font Awsome](https://fontawesome.com/)
 
 * [Google Fonts](https://fonts.google.com/)
+
+## Testing:
+
+As this was my first time being exposed to an API, my testing was extremely thorough, making sure that I scrutinized every line of code and detail. This also allowed me to learn in depth more how to work with an API. Testing involved my own personal testing and also that of my friends/users.
+
+## Testing Stories:
+
+* I have tested my **HTML** code using [The W3C Markup Validation Service](https://validator.w3.org/). It has found no errors. It has found, however, a couple of warnings. It found that the type attribute is unnecessary for JavaScript resources at the js folder script tag. I have since removed it. It was also a warning regarding an empty heading at the category title element. This content of this element is to be, of course, set with javascript. No action has been taken.
+
+* I have tested my **CSS** code using [CSS Validation Service](https://jigsaw.w3.org/css-validator/). It has found 1 error. I had a typo when styling the main buttons for large screens - instead of 'width' was 'windows' (probably due to autocorrecrt). I have since corrected the error.
+
+* I have also tested the catch method used when fetching the API's data. I have simply removed the URL, in this case the data from the API couldn't be accessed.
+
+* Half way thorugh the project, going through my HTML code, at the main section I have noticed I had more than 12 columns in a row. I have corrected the mistake immediately.
+
+* I have tested numerous times the outcome of the true and false buttons to check if it's corresponding with the question's correct answer. I have done this by simply logging the data 'fetched' from the API to the console. Like this, I had permanent access to all to correct anwers and see if there is a match. This also helped in adjusting the outcome for winning the game at the congratulations section, as I had permanent control on how many mistakes I want to finished the game with, thus testing the diplay of all three trophys. I have removed the console.log function at the end of the project.
+ 
