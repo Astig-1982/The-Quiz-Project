@@ -115,3 +115,19 @@ I knew that the project needed to be fully responsive on all types of screen, es
 **Result**:
 
 The game is fully responsive as expected, all elements and content fit within their boundaries and are easy to see on any device.
+
+## Features:
+
+* Five differents sections which are visible only one at a time.
+* Display of different quotes, relevant to the category chosen.
+* Call-to-action button that allows you to restart the game immediately as it's finished.
+* Animated trophy upon winning the game.
+
+### Five different sections:
+
+I've decided to use five different sections that will be hidden from the user and only visible when they are called. Only one section at a time is visible to the user. This makes - in my opinion - the game and the navigations through menus more intuitive.
+
+**Implementaion:**
+
+The sections are hidden or shown by using the jQuery methods show() and hide(). They are called at certain events during the game. For example, upon clicking on the 'START QUIZ' button from the landing page, the main section will hide and the category section will be displayed.  
+
