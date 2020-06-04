@@ -66,7 +66,26 @@ I have also used **Green** rgb(6, 191, 43) and **Red** rgb(153, 43, 43) for the 
 
 I have chosen not to use any background images throughout the entire game, because I believe that the combination of colors used is sufficient to keep the player focused and excited, without additional distractions or features.
 
-## Wireframes
+## Wireframes:
 
-I built the wireframe for this project using [BALSAMIQ](https://balsamiq.com/). I've started creating the basic structure, basically the jumbotron central container. Afterwords I've added within it the call-to-action buttons and the texts (questions, titilles, etc). Advancing in the project I've decided to add or remove some of the features created initially in the wireframe, therefore the wireframe is slightly different than the final product. I've added 2 extra categories; changed the main title, the text from the true/false buttons, the trophy display; removed email contact form and about section. I also decided not to add any images, preffering to stick only to the colors. 
- 
+I built the wireframe for this project using [BALSAMIQ](https://balsamiq.com/). I've started creating the basic structure, basically the jumbotron central container. Afterwords I've added within it the call-to-action buttons and the texts (questions, titilles, etc). Advancing in the project I've decided to add or remove some of the features created initially in the wireframe, therefore the wireframe is slightly different than the final product. I've added 2 extra categories; changed the main title, the text from the true/false buttons, the trophy display; removed email contact form and about section. I also decided not to add any images, preffering to stick only to the colors. You can view my wireframes [here](https://github.com/Astig-1982/The-Quiz-Project/blob/master/wireframes/The%20Quiz%20Project.pdf). You can also see the wireframe on gitpod in the 'wireframes' directory. 
+
+## Technologies used:
+
+### Languages:
+
+* [HTML](https://developer.mozilla.org/en-US/docs/Web/HTML)
+
+* [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS)
+
+* [JavaScript](https://www.javascript.com/)
+
+### Tools & Libraires:
+
+* [jQuery](https://jquery.com/)
+
+* [Bootstrap](https://getbootstrap.com/)
+
+* [Font Awsome](https://fontawesome.com/)
+
+* [Google Fonts](https://fonts.google.com/)
