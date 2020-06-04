@@ -105,4 +105,13 @@ As this was my first time being exposed to an API, my testing was extremely thor
 * Half way thorugh the project, going through my HTML code, at the main section I have noticed I had more than 12 columns in a row. I have corrected the mistake immediately.
 
 * I have tested numerous times the outcome of the true and false buttons to check if it's corresponding with the question's correct answer. I have done this by simply logging the data 'fetched' from the API to the console. Like this, I had permanent access to all to correct anwers and see if there is a match. This also helped in adjusting the outcome for winning the game at the congratulations section, as I had permanent control on how many mistakes I want to finished the game with, thus testing the diplay of all three trophys. I have removed the console.log function at the end of the project.
- 
+
+## Overall:
+
+**Responsivness**:
+
+I knew that the project needed to be fully responsive on all types of screen, especially mobile friendly. In order to accomplish this requirement I used Bootstrap as HTML framework, this option being the one that I'm most comfortable using at the moment. I've carried the testing using dev-tools throughout and a final test after the completion.
+
+**Result**:
+
+The game is fully responsive as expected, all elements and content fit within their boundaries and are easy to see on any device.
