@@ -153,5 +153,17 @@ The sections are hidden or shown by using the jQuery methods show() and hide(). 
 
 **Implementaion**:
 
-* I've created an animation in CSS with where I increase - using the transform property - the scale of the trophy icon from 1 to 8 (the values vary depending the size of the screen). I've added the animation into a class that will be added to the trophy icon in the DOM with the help of jQuery.
+* I've created an animation in CSS with where I increase - using the transform property - the scale of the trophy icon from 1 to 8 (the values vary depending on the size of the screen). I've inserted the animation into a class that will be added to the trophy icon in the DOM using jQuery.
+
+## Bugs: ##
+
+During the development of this project I was fortunate enough not to encounter many bugs.
+
+I did encounter 1 bug, which I mentioned before at the testing section (as it was discovered when I was testing and going over my HTML code). It was at the main section, where more than 12 columns were nested into a row. As mentioned the error has been corrected.
+
+Known Bug:
+
+There is unfortunately a known bug - if it's actually appropiate to call this way. I have noticed that I have used an old version of bootstrap. I have immediately changed with the latest version. However, as expected, the entire structure of the DOM has modified. Being very limited with time I couldn't redo the entire code, my deaddline for the completion of the project being very soon. Rest assured that I will change to the latest version and of course, the appereance and functionality of the game will remained unaltered.
+
+
 
