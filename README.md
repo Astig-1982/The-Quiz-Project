@@ -52,13 +52,13 @@ I used the [TROPHY](https://fontawesome.com/icons/trophy?style=solid) icon from 
 
 I have used worm and soft colors for the project as I wanted to protect the user from eye fatigue due to long exposure to bright colors on the screen. This may also result to longer experiences of the user with the game.
 
-* Primary: **Light Blue** #7fe7dc. I chose this as a main color because covering most of the viewport at all section, in my opinion, it fits to be a warm and in the same time happy and to a certain level bright color. It will help in keeping the player relaxed and exited.
+* Primary: **Turquoise** #7fe7dc. I chose this as a main color because covering most of the viewport at all section, in my opinion, it fits to be a warm and in the same time happy and to a certain level bright color. It will help in keeping the player relaxed and exited.
 
-* Secondary: **Shade of Dark Blue** #316879. I chose this color for the center container because it is close to the main color, in the same time providing the sufficient contrast in relation to the rest of the page. It makes the app clear and uniform.
+* Secondary: **Teal** #316879. I chose this color for the center container because it is close to the main color, in the same time providing the sufficient contrast in relation to the rest of the page. It makes the app clear and uniform.
 
-* Tertionary color: **Orange** #f47a60. I chose this color for call-to-action buttons because it provides the optimal contrast from the rest of the colors, making the buttons stand up on the viewport. As a result it makes the app more intuitive.
+* Tertionary color: **Coral** #f47a60. I chose this color for call-to-action buttons because it provides the optimal contrast from the rest of the colors, making the buttons stand up on the viewport. As a result it makes the app more intuitive.
 
-* Text color: **Light Grey** #ced7d8. This color makes the text visible in contrast with the dark blue and orange used for the center container and buttons, makinging it easy to read. It's warm shade of light grey contributes to the uniformity of the app.
+* Text color: **Grey** #ced7d8. This color makes the text visible in contrast with the dark blue and orange used for the center container and buttons, makinging it easy to read. It's warm shade of light grey contributes to the uniformity of the app.
 
 I have also used **Green** rgb(6, 191, 43) and **Red** rgb(153, 43, 43) for the color of the text displayed when answering the question, as they they have the same global significance indicating good or wrong outcomes.
 
@@ -209,7 +209,16 @@ I have made the following steps during the deployment of The Quiz Project using 
  
          git clone https://github.com/Astig-1982/The-Quiz-Project.git 
       
-          
+## Credits:
+
+* [opentdb](https://opentdb.com/api_config.php)
+* [99designs](https://99designs.co.uk/blog/creative-inspiration/color-combinations/)
+* [The Psychology of Color](https://www.helpscout.com/blog/psychology-of-color/)
+* [Unicorn](https://chrome.google.com/webstore/detail/unicorn-revealer/lmlkphhdlngaicolpmaakfmhplagoaln?hl=en-GB)
+
+
+
+
 
 
 
