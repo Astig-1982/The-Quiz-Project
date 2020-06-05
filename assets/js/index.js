@@ -35,14 +35,13 @@ function startTheQuiz() {
   /* the function below fetches the questions from the API and calls the renderQuestions() function */
   function fetchQuiz(catId) {
       fetch(
-        `https://opentdb.com/api.php?amount=10&category=${catId}&type=boolean`
+        `https://opentdb.com/api.php?amount=11&category=${catId}&type=boolean`
       )
         .then((res) => res.json())
         .then((data) => {
           allQuestions = data.results.map(function (question) {
             return question;
           });
-          console.log(allQuestions);
           renderQuestions();
         })
         .catch((err) => {
@@ -132,7 +131,7 @@ function startTheQuiz() {
 
   /* the function below is for winning the game display */
   function winGame() {
-    if (numberCount == 10 && currentLife == 3) {
+    if (numberCount == 11 && currentLife == 3) {
       winnerTrophy = "gold";
       winRef.show()
       gameRef.hide();
@@ -140,7 +139,7 @@ function startTheQuiz() {
       playerLife();
       trophyColor.removeClass("silver");
       trophyColor.removeClass("bronze");
-    } else if (numberCount == 10 && currentLife == 2) {
+    } else if (numberCount == 11 && currentLife == 2) {
       winnerTrophy = "silver";
       winRef.show();
       gameRef.hide();
@@ -148,7 +147,7 @@ function startTheQuiz() {
       playerLife();
       trophyColor.removeClass("gold");
       trophyColor.removeClass("bronze");
-    } else if (numberCount == 10 && currentLife == 1) {
+    } else if (numberCount == 11 && currentLife == 1) {
       winnerTrophy = "bronze";
       winRef.show()
       gameRef.hide();
