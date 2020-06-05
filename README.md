@@ -159,11 +159,57 @@ The sections are hidden or shown by using the jQuery methods show() and hide(). 
 
 During the development of this project I was fortunate enough not to encounter many bugs.
 
-I did encounter 1 bug, which I mentioned before at the testing section (as it was discovered when I was testing and going over my HTML code). It was at the main section, where more than 12 columns were nested into a row. As mentioned the error has been corrected.
+* I did encounter 1 bug, which I mentioned before at the testing section (as it was discovered when I was testing and going over my HTML code). It was at the main section, where more than 12 columns were nested into a row. As mentioned the error has been corrected.
 
 ### Known Bug:
 
-There is unfortunately a known bug - if it's actually appropiate to call it this way. I have noticed towards the end of my project that I have used an old version of bootstrap. I have immediately changed with the latest version. However, as expected, the entire structure of the DOM has modified. Being very limited with time I couldn't redo the entire code, my deaddline for the completion of the project being very close. Rest assured that I will change to the latest version and of course, the appereance and functionality of the game will remained unaltered.
+* There is unfortunately a known bug - if it's actually appropiate to call it this way. I have noticed towards the end of my project that I have used an old version of bootstrap. I have immediately changed with the latest version. However, as expected, the entire structure of the DOM has modified. Being very limited with time I couldn't redo the entire code, my deaddline for the completion of the project being very close. Rest assured that I will change to the latest version and of course, the appereance and functionality of the game will remained unaltered.
+
+There are no other known bugs.
+
+## Deployment:
+
+The Quiz Project was developed on GitPod using git and GitHub to host the repository.
+
+I have made the following steps during the deployment of The Quiz Project using GitHub:
+
+* Opened up GitHub in the browser.
+
+* Signed in using username and password.
+
+* Selected my repositories.
+
+* Navigated to **'/Astig-1982/The-Quiz-Project'**.
+
+* In the top navigation clicked 'settings'.
+
+* Scrolled down to the GitHub Pages area.
+
+* Selected 'Master Branch' from the 'Source' dropdown mennu.
+
+* Clicked to confirm my selection.
+
+* The-Quiz-Project is now live on GitHub Pages.
+
+### Running The-Quiz-Project locally
+
+* Cloning The-Quiz-Project from GitHub:
+
+* Navigate to **'/Astig-1982/The-Quiz-Project'**.
+
+* Click the green Clone or Downloand button.
+
+* Copy the url in the dropdown box.
+
+* Using your preffered IDE open up your preferred terminal.
+
+* Navigate to your desired file location.
+
+* Copy the following **code** and input it into your terminal to clone The Quiz Project.
+ 
+         git clone https://github.com/Astig-1982/The-Quiz-Project.git 
+      
+          
 
 
 
