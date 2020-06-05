@@ -120,14 +120,38 @@ The game is fully responsive as expected, all elements and content fit within th
 
 * Five differents sections which are visible only one at a time.
 * Display of different quotes, relevant to the category chosen.
-* Call-to-action button that allows you to restart the game immediately as it's finished.
+* Call-to-action button that allows you to play again immediately as the game finished.
 * Animated trophy upon winning the game.
 
 ### Five different sections:
 
 I've decided to use five different sections that will be hidden from the user and only visible when they are called. Only one section at a time is visible to the user. This makes - in my opinion - the game and the navigations through menus more intuitive.
 
-**Implementaion:**
+**Implementaion**:
 
-The sections are hidden or shown by using the jQuery methods show() and hide(). They are called at certain events during the game. For example, upon clicking on the 'START QUIZ' button from the landing page, the main section will hide and the category section will be displayed.  
+The sections are hidden or shown by using the jQuery methods show() and hide(). They are called at certain events during the game. For example, upon clicking on the 'START QUIZ' button from the landing page, the main section will hide and the category section will be displayed.
+
+### Display of quote: ###
+
+* I've decided to add this small feature as I believe it makes the game a bit more attractive and maybe - why not - inspire or motivate the player.
+
+**Implementation**:
+
+* I've created this feature with the help of JavaScript, using a switch statement when the category is chosen. 
+
+### Call-to-action button to play again: ###
+
+* I chose to add this simple feature as I believe is providing a more straight forward path to quickly play again a game, without having to navigate throught the main menu.
+
+**Implementation**:
+
+* I've created a click event for the call-to-action buttons, that will target the button displayed when the game is over or upon winning the game, with the value of 'again'. The click event hides the visible section and displays the category section with jQuery hide and show methods.
+
+### Animated trophy: ###
+
+* I chose to add this feature because it adds extra dynamicity to the game.
+
+**Implementaion**:
+
+* I've created an animation in CSS with where I increase - using the transform property - the scale of the trophy icon from 1 to 8 (the values vary depending the size of the screen). I've added the animation into a class that will be added to the trophy icon in the DOM with the help of jQuery.
 
