@@ -218,11 +218,11 @@ I have made the following steps during the deployment of The Quiz Project using 
 
 ## Content:
 
-I have not used any content from external sources.
+No content from external sources have been used.
 
 ## Media:
 
-I have not used any media from external sources.
+Not media from external sources have been used.
 
 
 
