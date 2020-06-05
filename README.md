@@ -216,6 +216,13 @@ I have made the following steps during the deployment of The Quiz Project using 
 * [The Psychology of Color](https://www.helpscout.com/blog/psychology-of-color/)
 * [Unicorn](https://chrome.google.com/webstore/detail/unicorn-revealer/lmlkphhdlngaicolpmaakfmhplagoaln?hl=en-GB)
 
+## Content:
+
+I have not used any content from external sources.
+
+## Media:
+
+I have not used any media from external sources.
 
 
 
