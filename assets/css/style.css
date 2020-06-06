@@ -428,7 +428,10 @@ a:hover {
         margin-top: 25vh;
     }
     #questions-container {
-        margin-top: .22vh;
+        margin-top: 3.2vh;
+    }
+    #catTitle {
+        margin-top: 0;
     }
     #rightAnswer {
         margin: .8rem 0 0 0;
