@@ -411,6 +411,12 @@ a:hover {
 }
 
 @media (min-width: 1025px) {
+    .contact-details {
+        margin-top: .4rem;
+    }
+    .social {
+        margin-top: 0;
+    }
     #category h2 {
         margin-top: 0;
         font-size: 4rem;
