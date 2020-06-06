@@ -411,6 +411,9 @@ a:hover {
 }
 
 @media (min-width: 1025px) {
+    #main-title {
+        margin: 0;
+    }
     .contact-details {
         margin-top: .4rem;
     }
