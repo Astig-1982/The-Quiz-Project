@@ -424,6 +424,12 @@ a:hover {
         margin-top: 0;
         font-size: 4rem;
     }
+     #category {
+        margin-top: 25vh;
+    }
+    #questions-container {
+        margin-top: .22vh;
+    }
     #rightAnswer {
         margin: .8rem 0 0 0;
     }
