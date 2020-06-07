@@ -173,7 +173,7 @@ There are no other known bugs.
 
 The Quiz Project was developed on GitPod using git and GitHub to host the repository.
 
-I have made the following steps during the deployment of The Quiz Project using GitHub:
+I have made the following steps during the deployment of **The Quiz Project** using GitHub:
 
 * Opened up GitHub in the browser.
 
@@ -207,7 +207,7 @@ I have made the following steps during the deployment of The Quiz Project using 
 
 * Navigate to your desired file location.
 
-* Copy the following **code** and input it into your terminal to clone The Quiz Project.
+* Copy the following **code** and input it into your terminal to clone **The Quiz Project**.
  
          git clone https://github.com/Astig-1982/The-Quiz-Project.git 
       
