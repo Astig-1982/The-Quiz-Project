@@ -271,6 +271,16 @@ a:hover {
     #title-container {
         margin-top: 15.9vh;
     }
+    #title-container h2 {
+        font-size: 2rem;
+        margin-top: 0;
+    }
+    #main-title {
+        margin: 5rem 0 1rem 0;
+    }
+    #startQuiz {
+        margin-top: 2.9rem;
+    }
    .main-buttons {
     margin-top: 3rem;
     }
@@ -284,6 +294,9 @@ a:hover {
    }
    ul {
        display: inline-flex;
+   }
+   #socialRow {
+       padding-left: 3.5rem;
    }
    #gameCategory {
        margin-top: 0;
