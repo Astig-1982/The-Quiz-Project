@@ -217,6 +217,7 @@ I have made the following steps during the deployment of **The Quiz Project** us
 * [99designs](https://99designs.co.uk/blog/creative-inspiration/color-combinations/)
 * [The Psychology of Color](https://www.helpscout.com/blog/psychology-of-color/)
 * [Unicorn](https://chrome.google.com/webstore/detail/unicorn-revealer/lmlkphhdlngaicolpmaakfmhplagoaln?hl=en-GB)
+* [beautifier.io](https://beautifier.io/)
 
 ## Content:
 
