@@ -217,6 +217,10 @@ a:hover {
 
 /* congratulation section starts here */
 
+#congratulations-container {
+    margin-top: 26.3vh;
+}
+
 #congratulations-text {
 	margin: 0;
 }
