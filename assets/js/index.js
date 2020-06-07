@@ -32,7 +32,7 @@ $(document).ready(function() {
         });
     }
 
-    /* the function below fetches the questions from the API and calls the renderQuestions() function */
+    /* the function below fetches the questions from the API and renders them into the DOM */
     function fetchQuiz(catId) {
         fetch(
                 `https://opentdb.com/api.php?amount=11&category=${catId}&type=boolean`
@@ -49,14 +49,14 @@ $(document).ready(function() {
             });
     }
 
-    /* the function below renders the questions into the DOM */
+    /* the function below prepends the questions */
     function renderQuestions() {
         $("#questions-container").prepend(
             `<p id="questions">${numberCount}. ${allQuestions[count].question}</p>`
         );
     }
 
-    /* the function below will display error message in case an error is caught while fetching data */
+    /* the function below will display the error message */
     function errorMessage() {
         $("#questions-container").prepend(
             `<p id="questions">Oops! Sorry, there seems to be a problem with our database.<br>
@@ -89,7 +89,7 @@ $(document).ready(function() {
         }
     }
 
-    /* the event below is for assigning true or false value to the questions */
+    /* the event below is for assigning true or false values to the questions */
     $(".answer-buttons").click(function(event) {
         if (event.target.value == allQuestions[count].correct_answer) {
             correctAnswer();
@@ -185,7 +185,7 @@ $(document).ready(function() {
         $("#rightAnswer").html(" ");
     }
 
-    /* the function below is for removing the questions element from the DOM */
+    /* the function below is for removing the questions from the DOM */
     function removeQuestions() {
         $("#questions").remove();
     }
