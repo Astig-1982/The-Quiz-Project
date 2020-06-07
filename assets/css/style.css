@@ -232,11 +232,11 @@ a:hover {
 
 @keyframes photo-zoom {
     from {
-        transform: scale(1);
+        transform: scale(3);
     }
 
     to {
-        transform: scale(8);
+        transform: scale(6);
     }
 }
 
