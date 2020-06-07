@@ -339,7 +339,7 @@ a:hover {
     .center-container {
         width: 80vw;
         height: 44vh;
-        margin-top: 19vh;
+        margin-top: 14.3vh;
     }
     #mainMenu {
         margin-top: 8rem;
@@ -350,11 +350,14 @@ a:hover {
     .view {
         left: 41vw;
     }
+    #questions-container {
+        margin-top: 10.4vh;
+    }
     #lifeBox {
         margin-top: 9rem;
     }
     #congratulations-container {
-        margin-top: 24vh;
+        margin-top: 26.3vh;
     }
     #gameOver-container h2 {
         margin-top: 8rem; 
