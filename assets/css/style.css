@@ -226,36 +226,35 @@ a:hover {
 }
 
 .trophy {
-    margin: 3rem 0 0 0;
-    font-size: 1rem;
+    margin: 5rem 0 0 0;
 }
 
-@keyframes photo-zoom {
+@keyframes trophy-zoom {
     from {
-        transform: scale(3);
+        transform: scale(1) rotate(0deg);
     }
 
     to {
-        transform: scale(6);
+        transform: scale(4) rotate(360deg);
     }
 }
 
 .gold {
-    animation-name: photo-zoom;
+    animation-name: trophy-zoom;
     animation-duration: 2s;
     animation-fill-mode: forwards;
     color: rgba(255, 215, 0, .8);
 }
 
 .silver {
-    animation-name: photo-zoom;
+    animation-name: trophy-zoom;
     animation-duration: 2s;
     animation-fill-mode: forwards;
     color: rgb(240, 240, 240);
 }
 
 .bronze {
-    animation-name: photo-zoom;
+    animation-name: trophy-zoom;
     animation-duration: 2s;
     animation-fill-mode: forwards;
     color: rgb(205, 127, 50);
