@@ -241,21 +241,21 @@ a:hover {
 
 .gold {
     animation-name: trophy-zoom;
-    animation-duration: 2s;
+    animation-duration: 1s;
     animation-fill-mode: forwards;
     color: rgba(255, 215, 0, .8);
 }
 
 .silver {
     animation-name: trophy-zoom;
-    animation-duration: 2s;
+    animation-duration: 1s;
     animation-fill-mode: forwards;
     color: rgb(240, 240, 240);
 }
 
 .bronze {
     animation-name: trophy-zoom;
-    animation-duration: 2s;
+    animation-duration: 1s;
     animation-fill-mode: forwards;
     color: rgb(205, 127, 50);
 }
