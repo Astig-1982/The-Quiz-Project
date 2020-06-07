@@ -6,20 +6,20 @@ The Quiz Project is a mini quiz game -- Master Quiz -- designed for people who a
 
 ### Project Goals
  
-Master Quiz main target is the people with a basic and above general knowledge with a predilection for science, history, geography. In the nearest future other categories related to intellectual knowledge will be added. The game is aimed to offer a straight forward and easy way to test your knowledge; something that can be done, for example, while waiting at the bus stop.
+Master Quiz main target is the people with a basic and above general knowledge with a predilection for educational topics. The game is aimed to offer a straight forward and easy way to test your knowledge; something that can be done, for example, while waiting at the bus stop.
 
 ### Users Goals
 
 * A game that can be fun and challenging in the same time.
 * A straight forward path to start the quiz, without navigating throught different menus.
-* A quiz that will have just educational categories, rather than lifestyle or main stream categories.
+* A quiz that will have just educational categories, rather than lifestyle or main stream.
 * A way to contact the products developer in case of any suggestions, complaints or any other relevant topics. 
 * A way to follow the developer on social media. In this case you will be on track with new potential releases and updates.
-* A quiz with different outcomes, depending on how many answers are right or wrong.
+* A quiz with different outcomes, depending on how good you are in the game.
 
 ### Users Stories  
 
-* As a user I am looking for a quiz game that will challenge me on an intelectual level and will be fun to play in the same time so I can always have handy a fun general knowledge test kit in my pocket.
+* As a user I am looking for a quiz game that will challenge me on an intelectual level and will be fast and fun to play in the same time so I can always have handy a fun general knowledge test kit in my pocket.
 * As a user I am looking for a quiz app that will be ready to start as soon as I open the app, without making me navigate through different menus before I have the option to actually start the quiz.
 * As a user I would like to be able to keep track through social media of the app updates and other future realeses from the developer.
 * As a user I would like a quiz app with a simple and clear design in order to focus on the questions rather than to be distracted by other features of the app during the game.
@@ -58,17 +58,17 @@ I have used worm and soft colors for the project as I wanted to protect the user
 
 * Tertionary color: **Coral** #f47a60. I chose this color for call-to-action buttons because it provides the optimal contrast from the rest of the colors, making the buttons stand up on the viewport. As a result it makes the app more intuitive.
 
-* Text color: **Grey** #ced7d8. This color makes the text visible in contrast with the dark blue and orange used for the center container and buttons, makinging it easy to read. It's warm shade of light grey contributes to the uniformity of the app.
+* Text color: **Grey** #ced7d8. This color makes the text visible in contrast with the dark blue and orange used for the center container and buttons, making it easy to read. It's warm shade of light grey contributes to the uniformity of the app.
 
-I have also used **Green** rgb(6, 191, 43) and **Red** rgb(153, 43, 43) for the color of the text displayed when answering the question, as they they have the same global significance indicating good or wrong outcomes.
+I have also used **Green** rgb(6, 191, 43) and **Red** rgb(153, 43, 43) for the color of the text displayed when answering the question, as these colors have the same significance pretty much globally.
 
 ### Background:
 
-I have chosen not to use any background images throughout the entire game, because I believe that the combination of colors used is sufficient to keep the player focused and excited, without additional distractions or features.
+I have chosen not to use any background images throughout the entire game, because I believe that the combination of colors used is sufficient to keep the player focused and excited, without additional distractions.
 
 ## Wireframes:
 
-I built the wireframe for this project using [BALSAMIQ](https://balsamiq.com/). I've started creating the basic structure, basically the jumbotron central container. Afterwords I've added within it the call-to-action buttons and the texts (questions, titilles, etc). Advancing in the project I've decided to add or remove some of the features created initially in the wireframe, therefore the wireframe is slightly different than the final product. I've added 2 extra categories; changed the main title, the text from the true/false buttons, the trophy display; removed email contact form and about section. I also decided not to add any images, preffering to stick only to the colors. You can view my wireframes [here](https://github.com/Astig-1982/The-Quiz-Project/blob/master/wireframes/The%20Quiz%20Project.pdf). You can also see the wireframe on gitpod in the 'wireframes' directory. 
+I built the wireframes for this project using [BALSAMIQ](https://balsamiq.com/). I've started creating the basic structure, basically the jumbotron central container. Afterwords I've added within it the call-to-action buttons and the texts (questions, titles, etc). Advancing in the project I've decided to add or remove some of the features created initially, therefore the wireframes are slightly different than the final product. I've added 2 extra categories; changed the main title, the text from the true/false buttons, the trophy display; removed email contact form and about section. I also decided not to add any images, preffering to stick only to the colors. You can view my wireframes [here](https://github.com/Astig-1982/The-Quiz-Project/tree/master/wireframes). You can also see the wireframes on gitpod in the 'wireframes' directory. 
 
 ## Technologies used:
 
@@ -92,19 +92,19 @@ I built the wireframe for this project using [BALSAMIQ](https://balsamiq.com/). 
 
 ## Testing:
 
-As this was my first time being exposed to an API, my testing was extremely thorough, making sure that I scrutinized every line of code and detail. This also allowed me to learn in depth more how to work with an API. Testing involved my own personal testing and also that of my friends/users.
+As this was my first time being exposed to an API, my testing was extremely thorough, making sure that I scrutinized every line of code and detail. This also allowed me to learn more in depth on how to work with an API.
 
 ## Testing Stories:
 
-* I have tested my **HTML** code using [The W3C Markup Validation Service](https://validator.w3.org/). It has found no errors. It has found, however, a couple of warnings. It found that the type attribute is unnecessary for JavaScript resources at the js folder script tag. I have since removed it. It was also a warning regarding an empty heading at the category title element. This content of this element is to be, of course, set with javascript. No action has been taken.
+* I have tested my **HTML** code using [The W3C Markup Validation Service](https://validator.w3.org/). It has found no errors. It has found, however, a couple of warnings. It's found that the type attribute is unnecessary for JavaScript resources at the js folder script tag. I have since removed it. It was also a warning regarding an empty heading at the category title element. This content of this element is to be, of course, set with javascript. No action has been taken.
 
-* I have tested my **CSS** code using [CSS Validation Service](https://jigsaw.w3.org/css-validator/). It has found 1 error. I had a typo when styling the main buttons for large screens - instead of 'width' was 'windows' (probably due to autocorrecrt). I have since corrected the error.
+* I have tested my **CSS** code using [CSS Validation Service](https://jigsaw.w3.org/css-validator/). It has found 1 error. I had a typo when styling the main buttons for large screens - instead of 'width' was 'windows' (probably due  to autocorrect). I have since corrected the error.
 
-* I have also tested the catch method used when fetching the API's data. I have simply removed the URL, in this case the data from the API couldn't be accessed.
+* I have also tested the catch method used when fetching the API's data. I have simply removed the URL, in this case the data from the API couldn't be accessed. The error message was diplayed at the game section as expected.
 
 * Half way thorugh the project, going through my HTML code, at the main section I have noticed I had more than 12 columns in a row. I have corrected the mistake immediately.
 
-* I have tested numerous times the outcome of the true and false buttons to check if it's corresponding with the question's correct answer. I have done this by simply logging the data 'fetched' from the API to the console. Like this, I had permanent access to all to correct anwers and see if there is a match. This also helped in adjusting the outcome for winning the game at the congratulations section, as I had permanent control on how many mistakes I want to finished the game with, thus testing the diplay of all three trophys. I have removed the console.log function at the end of the project.
+* I have tested numerous times the outcome of the true and false buttons to check if it's corresponding with the question's correct answer. I have done this by simply logging the data 'fetched' from the API to the console. Like this, I had permanent access to all to correct anwers and see if there is a match. This also helped in adjusting the outcome for winning the game at the congratulations section, as I had permanent control on how many mistakes I want to finished the game with, thus testing the diplay of all three trophys. I have removed the console.log function since.
 
 ## Overall:
 
@@ -125,11 +125,11 @@ The game is fully responsive as expected, all elements and content fit within th
 
 ### Five different sections:
 
-I've decided to use five different sections that will be hidden from the user and only visible when they are called. Only one section at a time is visible to the user. This makes - in my opinion - the game and the navigations through menus more intuitive.
+I've decided to use five different sections that will be hidden from the user and only visible when they are 'called'. Only one section at a time is visible to the user. This makes - in my opinion - the game and the navigations through menus more intuitive.
 
 **Implementaion**:
 
-The sections are hidden or shown by using the jQuery methods show() and hide(). They are called at certain events during the game. For example, upon clicking on the 'START QUIZ' button from the landing page, the main section will hide and the category section will be displayed.
+The sections are hidden or made visible by using the jQuery methods show() and hide(). They are 'called' at certain events during the game. For example, upon clicking on the 'START QUIZ' button from the landing page, the main section will hide and the category section will be displayed.
 
 ### Display of quote:
 
@@ -153,7 +153,7 @@ The sections are hidden or shown by using the jQuery methods show() and hide(). 
 
 **Implementaion**:
 
-* I've created an animation in CSS with where I increase - using the transform property - the scale of the trophy icon from 1 to 8 (the values vary depending on the size of the screen). I've inserted the animation into a class that will be added to the trophy icon in the DOM using jQuery.
+* I've created an animation in CSS with where I increase - using the transform property - the scale of the trophy icon from 3 to 6 (the values vary depending on the size of the screen). I've inserted the animation into a class that will be added to the trophy icon in the DOM using jQuery.
 
 In the nearest future I'm looking to include extra features. One of them would be more educational categories to choose from. Another feature would be to connect the quote section to an API and to generate a different quote with each question.
 
@@ -161,17 +161,17 @@ In the nearest future I'm looking to include extra features. One of them would b
 
 During the development of this project I was fortunate enough not to encounter many bugs.
 
-* I did encounter 1 bug, which I mentioned before at the testing section (as it was discovered when I was testing and going over my HTML code). It was at the main section, where more than 12 columns were nested into a row. As mentioned the error has been corrected.
+* I did encounter 1 bug which I mentioned before at the testing section (as it was discovered when I was testing and going over my HTML code). It was at the main section, where more than 12 columns were nested into a row. As mentioned the error has been corrected.
 
 ### Known Bug:
 
-* There is unfortunately a known bug - if it's actually appropiate to call it this way. I have noticed towards the end of my project that I have used an old version of bootstrap. I have immediately changed with the latest version. However, as expected, the entire structure of the DOM has modified. Being very limited with time I couldn't redo the entire code, my deaddline for the completion of the project being very close. Rest assured that I will change to the latest version and of course, the appereance and functionality of the game will remained unaltered.
+* There is unfortunately a known bug - if it's actually appropiate to call it this way. I have noticed towards the end of my project that I have used an old version of bootstrap. I have immediately changed with the latest version. However, as expected, the entire structure of the DOM has modified. Being very limited with time I couldn't redo the entire code, my deadline for the completion of the project being very close. Rest assured that I will change to the latest version and, of course, the appereance and functionality of the game will remain unaltered.
 
 There are no other known bugs.
 
 ## Deployment:
 
-The Quiz Project was developed on GitPod using git and GitHub to host the repository.
+**The Quiz Project** was developed on GitPod using git and GitHub to host the repository.
 
 I have made the following steps during the deployment of **The Quiz Project** using GitHub:
 
@@ -187,7 +187,7 @@ I have made the following steps during the deployment of **The Quiz Project** us
 
 * Scrolled down to the GitHub Pages area.
 
-* Selected 'Master Branch' from the 'Source' dropdown mennu.
+* Selected 'Master Branch' from the 'Source' dropdown menu.
 
 * Clicked to confirm my selection.
 
@@ -221,7 +221,7 @@ I have made the following steps during the deployment of **The Quiz Project** us
 
 ## Content:
 
-No content from external sources has been used.
+The quiz questions are from the [opentdb](https://opentdb.com/api_config.php) API.
 
 ## Media:
 
