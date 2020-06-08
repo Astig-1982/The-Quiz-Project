@@ -264,6 +264,12 @@ a:hover {
 
 /* media queries start here */
 
+@media (min-width: 375) and (max-width: 413px) {
+    #socialRow {
+        padding-left: 0;
+    }
+}
+
 @media (max-width: 767px) {
     #mainMenu {
         padding: 0;
@@ -371,7 +377,7 @@ a:hover {
     }
 }
 
-@media (min-width: 577px) and (max-width: 991px) {
+@media (min-width: 768px) and (max-width: 991px) {
     .center-container {
         width: 80vw;
         height: 44vh;
@@ -473,7 +479,7 @@ a:hover {
     }
 }
 
-@media (min-width: 1280px) {
+@media (min-width: 1500px) {
     #main-title {
         margin: 0;
     }
