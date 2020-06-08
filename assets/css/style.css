@@ -281,12 +281,6 @@ a:hover {
 
 /* media queries start here */
 
-@media (max-width: 375px) {
-    #socialRow {
-        padding-left: 0;
-    }
-}
-
 @media (max-width: 767px) {
     #mainMenu {
         padding: 0;
@@ -303,6 +297,10 @@ a:hover {
 
     #main-title {
         margin: 5rem 0 1rem 0;
+    }
+
+    #socialRow {
+        padding-left: 1rem;
     }
 
     #startQuiz {
@@ -325,10 +323,6 @@ a:hover {
 
     ul {
         display: inline-flex;
-    }
-
-    #socialRow {
-        padding-left: 3.5rem;
     }
 
     #gameCategory {
