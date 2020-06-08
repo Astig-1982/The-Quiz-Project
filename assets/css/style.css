@@ -473,7 +473,7 @@ a:hover {
     }
 }
 
-@media (min-width: 1600px) {
+@media (min-width: 1280px) {
     #main-title {
         margin: 0;
     }
