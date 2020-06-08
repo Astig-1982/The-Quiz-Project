@@ -264,10 +264,9 @@ a:hover {
 
 /* media queries start here */
 
-@media (min-width: 375) and (max-width: 413px) {
-    #socialRow {
-        padding-left: 0;
-    }
+@media (max-width: 375px)
+#socialRow {
+    padding-left: 0;
 }
 
 @media (max-width: 767px) {
@@ -479,7 +478,7 @@ a:hover {
     }
 }
 
-@media (min-width: 1500px) {
+@media (min-width: 1400px) {
     #main-title {
         margin: 0;
     }
