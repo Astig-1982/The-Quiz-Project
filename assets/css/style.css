@@ -172,7 +172,7 @@ a:hover {
 }
 
 #questions-container {
-    margin-top: 6.5vh;
+    margin-top: 7.6vh;
 }
 
 #gameOver-container {
@@ -504,10 +504,6 @@ a:hover {
 
     #category {
         margin-top: 25vh;
-    }
-
-    #questions-container {
-        margin-top: 3.2vh;
     }
 
     #catTitle {
