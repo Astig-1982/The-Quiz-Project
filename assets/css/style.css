@@ -26,6 +26,17 @@ h2 {
     padding: 0;
 }
 
+.center-container {
+    width: 50vw;
+    height: 45vh;
+    margin: 0 auto;
+    margin-top: 22.3vh;
+    text-align: center;
+    background-color: #316879;
+    color: #ced7d8;
+    font-family: 'Lato', sans-serif;
+}
+
 /* landing page starts here */
 
 .landing {
@@ -36,15 +47,8 @@ h2 {
     padding: 0;
 }
 
-.center-container {
-    width: 50vw;
-    height: 45vh;
-    margin: 0 auto;
-    margin-top: 22.3vh;
-    text-align: center;
-    background-color: #316879;
-    color: #ced7d8;
-    font-family: 'Lato', sans-serif;
+#title-container {
+    margin-top: 21.8vh;
 }
 
 h1 {
@@ -172,7 +176,7 @@ a:hover {
 }
 
 #questions-container {
-    margin-top: 6.5vh;
+    margin-top: 50vh;
 }
 
 #scienceOption h1 {
