@@ -299,6 +299,10 @@ a:hover {
         margin: 5rem 0 1rem 0;
     }
 
+    .social {
+        margin-top: 8rem;
+    }
+
     #socialRow {
         padding-left: 1rem;
     }
@@ -443,6 +447,10 @@ a:hover {
         height: 90px;
     }
 
+    .social {
+        margin-top: 22rem;
+    }
+
     .main-buttons {
         width: 250px;
         height: 90px;
@@ -489,3 +497,4 @@ a:hover {
         font-size: 2rem;
     }
 }
+
