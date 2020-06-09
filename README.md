@@ -153,7 +153,7 @@ The sections are hidden or made visible by using the jQuery methods show() and h
 
 **Implementaion**:
 
-* I've created an animation in CSS with where I increase - using the transform property - the scale of the trophy icon from 3 to 6 (the values vary depending on the size of the screen). I've inserted the animation into a class that will be added to the trophy icon in the DOM using jQuery.
+* I've created an animation in CSS with where I increase - using the transform property - the scale of the trophy icon from 3 to 6. I also rotate the trophy icon from 0deg to 180deg. I've inserted the animation into a class that will be added to the trophy icon in the DOM using jQuery.
 
 In the nearest future I'm looking to include extra features. One of them would be more educational categories to choose from. Another feature would be to connect the quote section to an API and to generate a different quote with each question.
 
