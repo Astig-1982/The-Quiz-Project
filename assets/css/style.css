@@ -329,6 +329,10 @@ a:hover {
         display: inline-flex;
     }
 
+    #catTitle {
+        margin-top: 4rem;
+    }
+
     #gameCategory {
         margin-top: 0;
     }
@@ -339,7 +343,7 @@ a:hover {
     }
 
     #questions-container {
-        margin-top: 7vh;
+        margin-top: 3.5vh;
     }
 
     #questions {
@@ -355,9 +359,12 @@ a:hover {
         margin-top: 1rem;
     }
 
+    #mainSection {
+        margin-top: 4rem;
+    }
+
     #lifeBox {
         width: 25vw;
-        height: 15vh;
         margin-top: 2.4rem;
         font-size: 6.2rem;
     }
