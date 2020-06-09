@@ -38,7 +38,7 @@ Master Quiz main target is the people with a basic and above general knowledge w
 The goal of the app is to offer the users an easy and quick way to play the quiz. Therefore I have chosen a very simple and clear design without creating for the user potential distractions, especially when in the middle of the game.
 
 ### Fonts:
-I chose to use [LATO](https://fonts.google.com/specimen/Lato?query=lato) as a main font for the entire app. In my opinion it is a clear and easy to read font and I believe it is especially important for displaying the questions. In this case the user will be able to quickly read and understand the text, her/his only being focus on the right answer.
+I chose to use [LATO](https://fonts.google.com/specimen/Lato?query=lato) as a main font for the entire app. In my opinion it is a clear and easy to read font and I believe it is especially important for displaying the questions. In this case the user will be able to quickly read and understand the text, her/his only focus being on the right answer.
 
 I chose to use [BALSAMIQ SANS](https://fonts.google.com/specimen/Balsamiq+Sans?query=balsamiq) for the main title and the name of the category display, both being h1 elements. Although I wanted to keep a simple and clear design, I believe that for the main titles, having large font sizes, it will still be very easy to read by everyone. In the same time it will give a bit of "artistic" touch  to the game, making it more attractive for the eye and "friendly" for the user.
 
